@@ -1,0 +1,7 @@
+D:\Files\C#\Sled 1 modul\Blank solution\Add10Years\bin\Debug\Add10Years.exe.config
+D:\Files\C#\Sled 1 modul\Blank solution\Add10Years\bin\Debug\Add10Years.exe
+D:\Files\C#\Sled 1 modul\Blank solution\Add10Years\bin\Debug\Add10Years.pdb
+D:\Files\C#\Sled 1 modul\Blank solution\Add10Years\obj\Debug\Add10Years.csprojResolveAssemblyReference.cache
+D:\Files\C#\Sled 1 modul\Blank solution\Add10Years\obj\Debug\Add10Years.csproj.CoreCompileInputs.cache
+D:\Files\C#\Sled 1 modul\Blank solution\Add10Years\obj\Debug\Add10Years.exe
+D:\Files\C#\Sled 1 modul\Blank solution\Add10Years\obj\Debug\Add10Years.pdb

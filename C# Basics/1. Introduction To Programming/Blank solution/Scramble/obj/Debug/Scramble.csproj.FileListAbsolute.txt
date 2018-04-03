@@ -1,0 +1,7 @@
+D:\Files\C#\Sled 1 modul\Blank solution\Scramble\bin\Debug\Scramble.exe.config
+D:\Files\C#\Sled 1 modul\Blank solution\Scramble\bin\Debug\Scramble.exe
+D:\Files\C#\Sled 1 modul\Blank solution\Scramble\bin\Debug\Scramble.pdb
+D:\Files\C#\Sled 1 modul\Blank solution\Scramble\obj\Debug\Scramble.csprojResolveAssemblyReference.cache
+D:\Files\C#\Sled 1 modul\Blank solution\Scramble\obj\Debug\Scramble.csproj.CoreCompileInputs.cache
+D:\Files\C#\Sled 1 modul\Blank solution\Scramble\obj\Debug\Scramble.exe
+D:\Files\C#\Sled 1 modul\Blank solution\Scramble\obj\Debug\Scramble.pdb

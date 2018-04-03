@@ -1,0 +1,7 @@
+D:\Files\C#\Sled 1 modul\Blank solution\DateAndAge\bin\Debug\DateAndAge.exe.config
+D:\Files\C#\Sled 1 modul\Blank solution\DateAndAge\bin\Debug\DateAndAge.exe
+D:\Files\C#\Sled 1 modul\Blank solution\DateAndAge\bin\Debug\DateAndAge.pdb
+D:\Files\C#\Sled 1 modul\Blank solution\DateAndAge\obj\Debug\DateAndAge.csprojResolveAssemblyReference.cache
+D:\Files\C#\Sled 1 modul\Blank solution\DateAndAge\obj\Debug\DateAndAge.csproj.CoreCompileInputs.cache
+D:\Files\C#\Sled 1 modul\Blank solution\DateAndAge\obj\Debug\DateAndAge.exe
+D:\Files\C#\Sled 1 modul\Blank solution\DateAndAge\obj\Debug\DateAndAge.pdb
