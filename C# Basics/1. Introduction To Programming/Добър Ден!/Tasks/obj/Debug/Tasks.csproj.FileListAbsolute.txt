@@ -1,7 +1,0 @@
-D:\Files\C#\Sled 1 modul\Добър Ден!\Tasks\bin\Debug\Tasks.exe.config
-D:\Files\C#\Sled 1 modul\Добър Ден!\Tasks\bin\Debug\Tasks.exe
-D:\Files\C#\Sled 1 modul\Добър Ден!\Tasks\bin\Debug\Tasks.pdb
-D:\Files\C#\Sled 1 modul\Добър Ден!\Tasks\obj\Debug\Tasks.csprojResolveAssemblyReference.cache
-D:\Files\C#\Sled 1 modul\Добър Ден!\Tasks\obj\Debug\Tasks.csproj.CoreCompileInputs.cache
-D:\Files\C#\Sled 1 modul\Добър Ден!\Tasks\obj\Debug\Tasks.exe
-D:\Files\C#\Sled 1 modul\Добър Ден!\Tasks\obj\Debug\Tasks.pdb

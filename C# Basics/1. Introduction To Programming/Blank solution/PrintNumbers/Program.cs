@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Tasks
+namespace PrintNumbers
 {
     class Program
     {

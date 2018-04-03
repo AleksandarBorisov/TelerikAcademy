@@ -1,7 +1,0 @@
-D:\Files\C#\Sled 1 modul\Добър Ден!\Добър Ден!\bin\Debug\Добър Ден!.exe.config
-D:\Files\C#\Sled 1 modul\Добър Ден!\Добър Ден!\bin\Debug\Добър Ден!.exe
-D:\Files\C#\Sled 1 modul\Добър Ден!\Добър Ден!\bin\Debug\Добър Ден!.pdb
-D:\Files\C#\Sled 1 modul\Добър Ден!\Добър Ден!\obj\Debug\Добър Ден!.csprojResolveAssemblyReference.cache
-D:\Files\C#\Sled 1 modul\Добър Ден!\Добър Ден!\obj\Debug\Добър Ден!.csproj.CoreCompileInputs.cache
-D:\Files\C#\Sled 1 modul\Добър Ден!\Добър Ден!\obj\Debug\Добър Ден!.exe
-D:\Files\C#\Sled 1 modul\Добър Ден!\Добър Ден!\obj\Debug\Добър Ден!.pdb
