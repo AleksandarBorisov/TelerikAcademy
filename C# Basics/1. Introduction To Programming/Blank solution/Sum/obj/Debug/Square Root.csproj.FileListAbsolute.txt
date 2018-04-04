@@ -1,7 +1,0 @@
-D:\Files\C#\Sled 1 modul\Blank solution\Sum\bin\Debug\Sum.exe.config
-D:\Files\C#\Sled 1 modul\Blank solution\Sum\bin\Debug\Sum.exe
-D:\Files\C#\Sled 1 modul\Blank solution\Sum\bin\Debug\Sum.pdb
-D:\Files\C#\Sled 1 modul\Blank solution\Sum\obj\Debug\Square Root.csprojResolveAssemblyReference.cache
-D:\Files\C#\Sled 1 modul\Blank solution\Sum\obj\Debug\Square Root.csproj.CoreCompileInputs.cache
-D:\Files\C#\Sled 1 modul\Blank solution\Sum\obj\Debug\Sum.exe
-D:\Files\C#\Sled 1 modul\Blank solution\Sum\obj\Debug\Sum.pdb

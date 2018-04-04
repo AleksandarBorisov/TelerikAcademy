@@ -1,7 +1,0 @@
-D:\Files\C#\Sled 1 modul\Blank solution\first1000members\bin\Debug\first1000members.exe.config
-D:\Files\C#\Sled 1 modul\Blank solution\first1000members\bin\Debug\first1000members.exe
-D:\Files\C#\Sled 1 modul\Blank solution\first1000members\bin\Debug\first1000members.pdb
-D:\Files\C#\Sled 1 modul\Blank solution\first1000members\obj\Debug\first1000members.csproj.CoreCompileInputs.cache
-D:\Files\C#\Sled 1 modul\Blank solution\first1000members\obj\Debug\first1000members.exe
-D:\Files\C#\Sled 1 modul\Blank solution\first1000members\obj\Debug\first1000members.pdb
-D:\Files\C#\Sled 1 modul\Blank solution\first1000members\obj\Debug\first1000members.csprojResolveAssemblyReference.cache

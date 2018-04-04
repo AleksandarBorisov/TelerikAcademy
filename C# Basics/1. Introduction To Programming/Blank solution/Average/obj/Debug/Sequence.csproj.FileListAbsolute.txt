@@ -1,6 +1,0 @@
-D:\Files\C#\Sled 1 modul\Blank solution\Average\bin\Debug\Average.exe.config
-D:\Files\C#\Sled 1 modul\Blank solution\Average\bin\Debug\Average.exe
-D:\Files\C#\Sled 1 modul\Blank solution\Average\bin\Debug\Average.pdb
-D:\Files\C#\Sled 1 modul\Blank solution\Average\obj\Debug\Sequence.csproj.CoreCompileInputs.cache
-D:\Files\C#\Sled 1 modul\Blank solution\Average\obj\Debug\Average.exe
-D:\Files\C#\Sled 1 modul\Blank solution\Average\obj\Debug\Average.pdb

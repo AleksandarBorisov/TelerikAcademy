@@ -1,6 +1,0 @@
-D:\Files\C#\Sled 1 modul\Blank solution\DateTime\bin\Debug\DateTime.exe.config
-D:\Files\C#\Sled 1 modul\Blank solution\DateTime\bin\Debug\DateTime.exe
-D:\Files\C#\Sled 1 modul\Blank solution\DateTime\bin\Debug\DateTime.pdb
-D:\Files\C#\Sled 1 modul\Blank solution\DateTime\obj\Debug\DateTime.csproj.CoreCompileInputs.cache
-D:\Files\C#\Sled 1 modul\Blank solution\DateTime\obj\Debug\DateTime.exe
-D:\Files\C#\Sled 1 modul\Blank solution\DateTime\obj\Debug\DateTime.pdb
