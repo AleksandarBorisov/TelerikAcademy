@@ -35,8 +35,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrailingZeroes", "TrailingZ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiralMatrix", "SpiralMatrix\SpiralMatrix.csproj", "{99588A08-ED28-4581-948B-DF57FA09DF11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromLessonBestSum", "FromLessonBestSum\FromLessonBestSum.csproj", "{0F25545F-1D2E-4063-AEB4-CB1D61513AF3}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDivisableNumbers", "NotDivisableNumbers\NotDivisableNumbers.csproj", "{F26752B3-0D29-4BA5-A1E5-34E78ECC4CF5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromLessonToto", "FromLessonToto\FromLessonToto.csproj", "{9DD7508D-D5F3-408E-A9BB-D142CC03D2FC}"
@@ -111,10 +109,6 @@ Global
 		{99588A08-ED28-4581-948B-DF57FA09DF11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99588A08-ED28-4581-948B-DF57FA09DF11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99588A08-ED28-4581-948B-DF57FA09DF11}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0F25545F-1D2E-4063-AEB4-CB1D61513AF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0F25545F-1D2E-4063-AEB4-CB1D61513AF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0F25545F-1D2E-4063-AEB4-CB1D61513AF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0F25545F-1D2E-4063-AEB4-CB1D61513AF3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F26752B3-0D29-4BA5-A1E5-34E78ECC4CF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F26752B3-0D29-4BA5-A1E5-34E78ECC4CF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F26752B3-0D29-4BA5-A1E5-34E78ECC4CF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
