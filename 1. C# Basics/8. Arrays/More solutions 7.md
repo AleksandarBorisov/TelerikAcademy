@@ -1,5 +1,5 @@
-## Още няколко интересни варианта на задачите
-### Първа задача с масив:
+п»ї## РћС‰Рµ РЅСЏРєРѕР»РєРѕ РёРЅС‚РµСЂРµСЃРЅРё РІР°СЂРёР°РЅС‚Р° РЅР° Р·Р°РґР°С‡РёС‚Рµ
+### РџСЉСЂРІР° Р·Р°РґР°С‡Р° СЃ РјР°СЃРёРІ:
 ```C#
 	int[] firstArrayEver = new int[20];
         for (int index = 0; index < 20; index++)
@@ -9,35 +9,35 @@
         }
         Console.WriteLine();
 ```
-### Сравнение на два масива:
+### РЎСЂР°РІРЅРµРЅРёРµ РЅР° РґРІР° РјР°СЃРёРІР°:
 ```C#
-	Console.Write("Въведете големина на масив A: ");
+	Console.Write("Р’СЉРІРµРґРµС‚Рµ РіРѕР»РµРјРёРЅР° РЅР° РјР°СЃРёРІ A: ");
         int maxIndexA = int.Parse(Console.ReadLine());
-        Console.Write("Въведете големина на масив B: ");
+        Console.Write("Р’СЉРІРµРґРµС‚Рµ РіРѕР»РµРјРёРЅР° РЅР° РјР°СЃРёРІ B: ");
         int maxIndexB = int.Parse(Console.ReadLine());
         if (maxIndexA != maxIndexB)
         {
-            Console.WriteLine("Двата масива са различни.");
+            Console.WriteLine("Р”РІР°С‚Р° РјР°СЃРёРІР° СЃР° СЂР°Р·Р»РёС‡РЅРё.");
         }
         else
         {
             int[] arrayA = new int[maxIndexA];
             int[] arrayB = new int[maxIndexA];
             bool areEqual = true;
-            Console.WriteLine("Въведете елементи за масив А: ");
+            Console.WriteLine("Р’СЉРІРµРґРµС‚Рµ РµР»РµРјРµРЅС‚Рё Р·Р° РјР°СЃРёРІ Рђ: ");
             for (int index = 0; index < maxIndexA; index++)
             {
                 arrayA[index] = int.Parse(Console.ReadLine());
             }
-            Console.WriteLine("Въведете елементи за масив B: ");
+            Console.WriteLine("Р’СЉРІРµРґРµС‚Рµ РµР»РµРјРµРЅС‚Рё Р·Р° РјР°СЃРёРІ B: ");
             for (int index = 0; index < maxIndexB; index++)
             {
                 arrayB[index] = int.Parse(Console.ReadLine());
                 areEqual = arrayA[index] == arrayB[index];
             }
-            Console.WriteLine(areEqual ? "Масивите са равни." : "Масивите са различни.");
+            Console.WriteLine(areEqual ? "РњР°СЃРёРІРёС‚Рµ СЃР° СЂР°РІРЅРё." : "РњР°СЃРёРІРёС‚Рµ СЃР° СЂР°Р·Р»РёС‡РЅРё.");
 ```
-### Selection Sort като вариант:
+### Selection Sort РєР°С‚Рѕ РІР°СЂРёР°РЅС‚:
 ```C#
 	Console.Write("Enter number of elements: ");
         int n = int.Parse(Console.ReadLine());
@@ -55,7 +55,7 @@
         {
             for (int j = i; j < n; j++)
             {
-                if (arr[j] < min)//Винаги ще се изпълни поне веднъж
+                if (arr[j] < min)//Р’РёРЅР°РіРё С‰Рµ СЃРµ РёР·РїСЉР»РЅРё РїРѕРЅРµ РІРµРґРЅСЉР¶
                 {
                     min = arr[j];
                     minIndex = j;
@@ -72,7 +72,7 @@
             Console.Write("{0} ", arr[index]);
         }
 ```
-### Maximal Sum като вариант(+ Какво е Dinamic programming):
+### Maximal Sum РєР°С‚Рѕ РІР°СЂРёР°РЅС‚(+ РљР°РєРІРѕ Рµ Dinamic programming):
 >Dynamic programming (also known as dynamic optimization) is a method for solving a complex problem 
 >by breaking it down into a collection of simpler subproblems, solving each of those subproblems 
 >just once, and storing their solutions. The next time the same subproblem occurs, instead of 
@@ -136,7 +136,7 @@
 >position is calculated in a simple way from a related but smaller and overlapping subproblem: the 
 >maximum subarray ending at the previous position) this algorithm can be viewed as a simple/trivial 
 >example of dynamic programming.
-### Maximal Sum като вариант:
+### Maximal Sum РєР°С‚Рѕ РІР°СЂРёР°РЅС‚:
 ```C#
 	int[] array = { 2, 3, -6, -1, 2, -1, 6, 4, -8, 8 };
         int maxEndHere = array[0];
@@ -164,7 +164,7 @@
             Console.Write(array[i] + " ");
 } 
 ```
-### FindSumInArray като вариант:
+### FindSumInArray РєР°С‚Рѕ РІР°СЂРёР°РЅС‚:
 ```C#
 	Console.WriteLine("Enter the wanted sum of the subsets:");
         long wantedSum = long.Parse(Console.ReadLine());
@@ -175,7 +175,7 @@
         string subset = "";
         for (int i = 0; i < elements.Length; i++)
         {
-            Console.WriteLine("Enter element № {0}", i + 1);
+            Console.WriteLine("Enter element в„– {0}", i + 1);
             elements[i] = long.Parse(Console.ReadLine());
         }
         int maxSubsets = (int)Math.Pow(2, numberOfElements) - 1;
@@ -203,7 +203,7 @@
         }
 	Console.WriteLine(counter);
 ```
-### FindSumInArray като 2 вариант:
+### FindSumInArray РєР°С‚Рѕ 2 РІР°СЂРёР°РЅС‚:
 ```C#
         string input = Console.ReadLine();
         string[] inputElements = input.Split(new char[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
@@ -238,7 +238,7 @@
             }
 	}
 ```
-### FindSumInArray като 3 вариант:
+### FindSumInArray РєР°С‚Рѕ 3 РІР°СЂРёР°РЅС‚:
 ```C#
 	int n = int.Parse(Console.ReadLine());
         int[] numbers = new int[n];
@@ -269,7 +269,7 @@
             }
         }
 ```
-### Binary Search като вариант:
+### Binary Search РєР°С‚Рѕ РІР°СЂРёР°РЅС‚:
 ```C#
 	int n = int.Parse(Console.ReadLine());
         int[] numbers = new int[n];
@@ -289,7 +289,7 @@
         }
         Console.WriteLine(index);
 ```
-### Prime numbers (вариант с листи който е адски бавен):
+### Prime numbers (РІР°СЂРёР°РЅС‚ СЃ Р»РёСЃС‚Рё РєРѕР№С‚Рѕ Рµ Р°РґСЃРєРё Р±Р°РІРµРЅ):
 ```C#
 	using System.Collections.Generic;
 	int n = int.Parse(Console.ReadLine());
@@ -300,7 +300,7 @@
         }
         int startIndex = 0;
         int firstPrime = numbers[startIndex];
-        while (firstPrime != numbers[numbers.Count - 1])//Последното винаги ще е просто затова не го проверяваме
+        while (firstPrime != numbers[numbers.Count - 1])//РџРѕСЃР»РµРґРЅРѕС‚Рѕ РІРёРЅР°РіРё С‰Рµ Рµ РїСЂРѕСЃС‚Рѕ Р·Р°С‚РѕРІР° РЅРµ РіРѕ РїСЂРѕРІРµСЂСЏРІР°РјРµ
         {
             for (int comparison = firstPrime; comparison <= numbers[numbers.Count-1]; comparison+=firstPrime)
             {
@@ -316,7 +316,7 @@
             Console.WriteLine(prime);
         }
 ```
-### Prime numbers (вариант с три масива, който е адски бавен):
+### Prime numbers (РІР°СЂРёР°РЅС‚ СЃ С‚СЂРё РјР°СЃРёРІР°, РєРѕР№С‚Рѕ Рµ Р°РґСЃРєРё Р±Р°РІРµРЅ):
 ```C#
 	int n = int.Parse(Console.ReadLine());
         int[] numbers = new int[n - 1];
@@ -325,7 +325,7 @@
             numbers[i] = i + 2;
         }
         int isPrime = 0;
-        while (isPrime != numbers.Length-1) //Последното число винаги ще е просто затова не го проверяваме
+        while (isPrime != numbers.Length-1) //РџРѕСЃР»РµРґРЅРѕС‚Рѕ С‡РёСЃР»Рѕ РІРёРЅР°РіРё С‰Рµ Рµ РїСЂРѕСЃС‚Рѕ Р·Р°С‚РѕРІР° РЅРµ РіРѕ РїСЂРѕРІРµСЂСЏРІР°РјРµ
         {
             string primes = " ";
             for (int comparison = 0; comparison <= numbers.Length - 1; comparison ++)
@@ -347,7 +347,7 @@
         }
         Console.WriteLine(numbers[numbers.Length-1]);
 ```
-### Prime numbers(вариант с два масива, които заемат адски много памет):
+### Prime numbers(РІР°СЂРёР°РЅС‚ СЃ РґРІР° РјР°СЃРёРІР°, РєРѕРёС‚Рѕ Р·Р°РµРјР°С‚ Р°РґСЃРєРё РјРЅРѕРіРѕ РїР°РјРµС‚):
 ```C#
         long n = long.Parse(Console.ReadLine());
         long[] numbers = new long[n - 1];
@@ -356,27 +356,27 @@
             numbers[i] = i + 2;
         }
         long startIndex = 0;
-        long isPrime = numbers[startIndex];//започваме с първото число
-        while (isPrime != numbers[numbers.Length - 1])//Проверяваме дали сме достигнали псоледното число
-        {//Последното число винаги ще е просто затова не го проверяваме
-            long[] iterationNumbers = new long[numbers.Length];//въвеждаме помощен масив
-            long index = 0;//тук ще запишем първото число
+        long isPrime = numbers[startIndex];//Р·Р°РїРѕС‡РІР°РјРµ СЃ РїСЉСЂРІРѕС‚Рѕ С‡РёСЃР»Рѕ
+        while (isPrime != numbers[numbers.Length - 1])//РџСЂРѕРІРµСЂСЏРІР°РјРµ РґР°Р»Рё СЃРјРµ РґРѕСЃС‚РёРіРЅР°Р»Рё РїСЃРѕР»РµРґРЅРѕС‚Рѕ С‡РёСЃР»Рѕ
+        {//РџРѕСЃР»РµРґРЅРѕС‚Рѕ С‡РёСЃР»Рѕ РІРёРЅР°РіРё С‰Рµ Рµ РїСЂРѕСЃС‚Рѕ Р·Р°С‚РѕРІР° РЅРµ РіРѕ РїСЂРѕРІРµСЂСЏРІР°РјРµ
+            long[] iterationNumbers = new long[numbers.Length];//РІСЉРІРµР¶РґР°РјРµ РїРѕРјРѕС‰РµРЅ РјР°СЃРёРІ
+            long index = 0;//С‚СѓРє С‰Рµ Р·Р°РїРёС€РµРј РїСЉСЂРІРѕС‚Рѕ С‡РёСЃР»Рѕ
             for (long comparison = 0; comparison < numbers.Length; comparison++)
-            {//винаги обхождаме целия масив от числа
+            {//РІРёРЅР°РіРё РѕР±С…РѕР¶РґР°РјРµ С†РµР»РёСЏ РјР°СЃРёРІ РѕС‚ С‡РёСЃР»Р°
                 if (numbers[comparison] <= isPrime || numbers[comparison] % isPrime != 0)
-                //Това ни гарантира че по-малките или равни на настоящото просто
-                //число винаги ще се копират, както и тези, които се делят с остатък
+                //РўРѕРІР° РЅРё РіР°СЂР°РЅС‚РёСЂР° С‡Рµ РїРѕ-РјР°Р»РєРёС‚Рµ РёР»Рё СЂР°РІРЅРё РЅР° РЅР°СЃС‚РѕСЏС‰РѕС‚Рѕ РїСЂРѕСЃС‚Рѕ
+                //С‡РёСЃР»Рѕ РІРёРЅР°РіРё С‰Рµ СЃРµ РєРѕРїРёСЂР°С‚, РєР°РєС‚Рѕ Рё С‚РµР·Рё, РєРѕРёС‚Рѕ СЃРµ РґРµР»СЏС‚ СЃ РѕСЃС‚Р°С‚СЉРє
                 {
-                    iterationNumbers[index] = numbers[comparison];//записваме в помощния масив
-                    index++;//Пази ни индекса на последния записан елемент
+                    iterationNumbers[index] = numbers[comparison];//Р·Р°РїРёСЃРІР°РјРµ РІ РїРѕРјРѕС‰РЅРёСЏ РјР°СЃРёРІ
+                    index++;//РџР°Р·Рё РЅРё РёРЅРґРµРєСЃР° РЅР° РїРѕСЃР»РµРґРЅРёСЏ Р·Р°РїРёСЃР°РЅ РµР»РµРјРµРЅС‚
                 }
             }
-            numbers = new long[index];//дефинираме дадения масив с нова големина
+            numbers = new long[index];//РґРµС„РёРЅРёСЂР°РјРµ РґР°РґРµРЅРёСЏ РјР°СЃРёРІ СЃ РЅРѕРІР° РіРѕР»РµРјРёРЅР°
             for (long i = 0; i < index; i++)
             {
-                numbers[i] = iterationNumbers[i];//присвояваме му заделените числа
+                numbers[i] = iterationNumbers[i];//РїСЂРёСЃРІРѕСЏРІР°РјРµ РјСѓ Р·Р°РґРµР»РµРЅРёС‚Рµ С‡РёСЃР»Р°
             }
-            isPrime = numbers[++startIndex];//взимаме следващото просто число
+            isPrime = numbers[++startIndex];//РІР·РёРјР°РјРµ СЃР»РµРґРІР°С‰РѕС‚Рѕ РїСЂРѕСЃС‚Рѕ С‡РёСЃР»Рѕ
         }
         //foreach (var prime in numbers)
         //{
@@ -384,7 +384,7 @@
         //}
         Console.WriteLine(numbers[numbers.Length-1]);
 ```
-### Prime numbers(вариант с масив и стринг, които заемат адски много памет):
+### Prime numbers(РІР°СЂРёР°РЅС‚ СЃ РјР°СЃРёРІ Рё СЃС‚СЂРёРЅРі, РєРѕРёС‚Рѕ Р·Р°РµРјР°С‚ Р°РґСЃРєРё РјРЅРѕРіРѕ РїР°РјРµС‚):
 ```C#
 	long n = long.Parse(Console.ReadLine());
         string[] numbers = new string[n - 1];
@@ -413,21 +413,21 @@
             Console.WriteLine(prime);
         }
 ```
-### Prime numbers(сравнително добро решение):
+### Prime numbers(СЃСЂР°РІРЅРёС‚РµР»РЅРѕ РґРѕР±СЂРѕ СЂРµС€РµРЅРёРµ):
 ```C#
 	long n = long.Parse(Console.ReadLine());
-        bool[] isNotPrime = new bool[n+1];//стойностите на елементите чийто индекси са числата от 2 до n
-        for (int i = 2; i < n; i++)//числата от 2 до n ще бъдат индекси в масива от стойности
+        bool[] isNotPrime = new bool[n+1];//СЃС‚РѕР№РЅРѕСЃС‚РёС‚Рµ РЅР° РµР»РµРјРµРЅС‚РёС‚Рµ С‡РёР№С‚Рѕ РёРЅРґРµРєСЃРё СЃР° С‡РёСЃР»Р°С‚Р° РѕС‚ 2 РґРѕ n
+        for (int i = 2; i < n; i++)//С‡РёСЃР»Р°С‚Р° РѕС‚ 2 РґРѕ n С‰Рµ Р±СЉРґР°С‚ РёРЅРґРµРєСЃРё РІ РјР°СЃРёРІР° РѕС‚ СЃС‚РѕР№РЅРѕСЃС‚Рё
         {
-            if (!isNotPrime[i])//всички булеви стойности имат стойност по подразбиране false
+            if (!isNotPrime[i])//РІСЃРёС‡РєРё Р±СѓР»РµРІРё СЃС‚РѕР№РЅРѕСЃС‚Рё РёРјР°С‚ СЃС‚РѕР№РЅРѕСЃС‚ РїРѕ РїРѕРґСЂР°Р·Р±РёСЂР°РЅРµ false
             {
-                for (int j = 2; j * i <= n; j++)//това е коефициента по който умножаваме
+                for (int j = 2; j * i <= n; j++)//С‚РѕРІР° Рµ РєРѕРµС„РёС†РёРµРЅС‚Р° РїРѕ РєРѕР№С‚Рѕ СѓРјРЅРѕР¶Р°РІР°РјРµ
                 {
-                    isNotPrime[i * j] = true;//местата където имаме кратни на i се маркират като сложни числа;
+                    isNotPrime[i * j] = true;//РјРµСЃС‚Р°С‚Р° РєСЉРґРµС‚Рѕ РёРјР°РјРµ РєСЂР°С‚РЅРё РЅР° i СЃРµ РјР°СЂРєРёСЂР°С‚ РєР°С‚Рѕ СЃР»РѕР¶РЅРё С‡РёСЃР»Р°;
                 }
             }
         }
-        for (long i = n; i >= 0; i--)//въртим ги отзад напред и търсим първото просто
+        for (long i = n; i >= 0; i--)//РІСЉСЂС‚РёРј РіРё РѕС‚Р·Р°Рґ РЅР°РїСЂРµРґ Рё С‚СЉСЂСЃРёРј РїСЉСЂРІРѕС‚Рѕ РїСЂРѕСЃС‚Рѕ
         {
             if (!isNotPrime[i])
             {
@@ -436,7 +436,7 @@
             }
         }
 ```
-### Remove elements from array(най-кратко решение):
+### Remove elements from array(РЅР°Р№-РєСЂР°С‚РєРѕ СЂРµС€РµРЅРёРµ):
 ```C#
         int n = int.Parse(Console.ReadLine());
         int[] forSorting = new int[n];
@@ -447,7 +447,7 @@
         int[] subsetCount = new int[n];
         for (int i = 0; i < n; i++)
         {
-            subsetCount[i] = 1;//задаваме всички да са с дължина 1
+            subsetCount[i] = 1;//Р·Р°РґР°РІР°РјРµ РІСЃРёС‡РєРё РґР° СЃР° СЃ РґСЉР»Р¶РёРЅР° 1
         }
         int maxCount = 1;
         for (int rightIndex = 1; rightIndex < n; rightIndex++)
@@ -456,16 +456,16 @@
             {
                 if (forSorting[leftIndex]<=forSorting[rightIndex]&&
                     subsetCount[rightIndex]<=subsetCount[leftIndex]+1)
-		//Винаги ни избира най-дългата последователност от предходните и запазва нея за себе си + 1      
+		//Р’РёРЅР°РіРё РЅРё РёР·Р±РёСЂР° РЅР°Р№-РґСЉР»РіР°С‚Р° РїРѕСЃР»РµРґРѕРІР°С‚РµР»РЅРѕСЃС‚ РѕС‚ РїСЂРµРґС…РѕРґРЅРёС‚Рµ Рё Р·Р°РїР°Р·РІР° РЅРµСЏ Р·Р° СЃРµР±Рµ СЃРё + 1      
                 {
-                    subsetCount[rightIndex] = subsetCount[leftIndex] + 1;//в помощния масив на съответната позиция
-                    maxCount = Math.Max(maxCount, subsetCount[leftIndex] + 1);//винаги пазим най-голямата дължина за всички позиции
+                    subsetCount[rightIndex] = subsetCount[leftIndex] + 1;//РІ РїРѕРјРѕС‰РЅРёСЏ РјР°СЃРёРІ РЅР° СЃСЉРѕС‚РІРµС‚РЅР°С‚Р° РїРѕР·РёС†РёСЏ
+                    maxCount = Math.Max(maxCount, subsetCount[leftIndex] + 1);//РІРёРЅР°РіРё РїР°Р·РёРј РЅР°Р№-РіРѕР»СЏРјР°С‚Р° РґСЉР»Р¶РёРЅР° Р·Р° РІСЃРёС‡РєРё РїРѕР·РёС†РёРё
                 }
             }
         }
         Console.WriteLine(n - maxCount);
 ```
-### Permutations (вариация на countdown):
+### Permutations (РІР°СЂРёР°С†РёСЏ РЅР° countdown):
 ```C#
 	int n = int.Parse(Console.ReadLine());
         int[] a = new int[n];
@@ -483,7 +483,7 @@
         {
             p[i]--;
             j = 0;
-            do//първия вариант е с j = i % 2 * p[i] вместо този цикъл
+            do//РїСЉСЂРІРёСЏ РІР°СЂРёР°РЅС‚ Рµ СЃ j = i % 2 * p[i] РІРјРµСЃС‚Рѕ С‚РѕР·Рё С†РёРєСЉР»
             {
                 int temp = a[j];
                 a[j] = a[i];
@@ -500,15 +500,15 @@
             Console.WriteLine(string.Join(" ", a));
         }
 ```
-**Теорията я четох от тук:**
+**РўРµРѕСЂРёСЏС‚Р° СЏ С‡РµС‚РѕС… РѕС‚ С‚СѓРє:**
 [link](http://permute.tchs.info/ScalablePermutations.html#chap03), 
 [link](http://www.quickperm.org/), 
 [link](http://mikejfromva.com/2016/10/15/heaps-algorithm/), 
 [link](https://stackoverflow.com/questions/31425531/heap-algorithm-for-permutations)
-### Permutations (вариация на counting):
+### Permutations (РІР°СЂРёР°С†РёСЏ РЅР° counting):
 ```C#
 	int n = int.Parse(Console.ReadLine());
-        int[] a = new int[n];//може да се реши и като варианта с countdown от VS с два while цикъла
+        int[] a = new int[n];//РјРѕР¶Рµ РґР° СЃРµ СЂРµС€Рё Рё РєР°С‚Рѕ РІР°СЂРёР°РЅС‚Р° СЃ countdown РѕС‚ VS СЃ РґРІР° while С†РёРєСЉР»Р°
         int[] p = new int[n];
         for (int k = 0; k < n; k++)
         {
@@ -526,7 +526,7 @@
                 {
                     j = p[i];
                 }
-                else//може да се замени с j = i % 2 * p[i]
+                else//РјРѕР¶Рµ РґР° СЃРµ Р·Р°РјРµРЅРё СЃ j = i % 2 * p[i]
                 {
                     j = 0;
                 }
@@ -544,9 +544,9 @@
             }
         }
 ```
-**Теория за Пермутации(Вариации) и Комбинации от тук:**
+**РўРµРѕСЂРёСЏ Р·Р° РџРµСЂРјСѓС‚Р°С†РёРё(Р’Р°СЂРёР°С†РёРё) Рё РљРѕРјР±РёРЅР°С†РёРё РѕС‚ С‚СѓРє:**
 [link](https://www.mathsisfun.com/combinatorics/combinations-permutations.html)
-### Как да четем научна литература:
+### РљР°Рє РґР° С‡РµС‚РµРј РЅР°СѓС‡РЅР° Р»РёС‚РµСЂР°С‚СѓСЂР°:
 >Let me give you some advice about reading papers. If you find some detail you don't understand, often you can keep 
 >reading and see if you can still understand what is going on. Sometimes there will be a typo in the paper that is 
 >small or inconsequential. Sometimes it's a detail but if you keep reading you can still understand much of the rest 
