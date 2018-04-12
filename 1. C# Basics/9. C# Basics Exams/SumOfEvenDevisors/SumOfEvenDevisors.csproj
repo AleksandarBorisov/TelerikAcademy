@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D475C478-6BDF-4B41-B176-42F8F1F1CD8A}</ProjectGuid>
+    <ProjectGuid>{02E66F72-D3F4-45F8-8D1A-67234E6200BB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BullsAndCows</RootNamespace>
-    <AssemblyName>BullsAndCows</AssemblyName>
+    <RootNamespace>SumOfEvenDevisors</RootNamespace>
+    <AssemblyName>SumOfEvenDevisors</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

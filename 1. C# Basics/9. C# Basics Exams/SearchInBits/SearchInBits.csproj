@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D475C478-6BDF-4B41-B176-42F8F1F1CD8A}</ProjectGuid>
+    <ProjectGuid>{D23C8B2E-FBE8-4171-BAA7-78EFB8B2FA0E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BullsAndCows</RootNamespace>
-    <AssemblyName>BullsAndCows</AssemblyName>
+    <RootNamespace>SearchInBits</RootNamespace>
+    <AssemblyName>SearchInBits</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

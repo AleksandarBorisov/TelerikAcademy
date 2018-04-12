@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D475C478-6BDF-4B41-B176-42F8F1F1CD8A}</ProjectGuid>
+    <ProjectGuid>{41643DFA-375F-4DC9-BE84-C40EE79DF4FF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BullsAndCows</RootNamespace>
-    <AssemblyName>BullsAndCows</AssemblyName>
+    <RootNamespace>MixingNumbers</RootNamespace>
+    <AssemblyName>MixingNumbers</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

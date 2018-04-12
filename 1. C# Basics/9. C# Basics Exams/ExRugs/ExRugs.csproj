@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D475C478-6BDF-4B41-B176-42F8F1F1CD8A}</ProjectGuid>
+    <ProjectGuid>{D03A76BB-3C2F-4056-82D4-3C86C562A207}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BullsAndCows</RootNamespace>
-    <AssemblyName>BullsAndCows</AssemblyName>
+    <RootNamespace>ExRugs</RootNamespace>
+    <AssemblyName>ExRugs</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
