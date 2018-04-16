@@ -1,26 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Tasks
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            //Variable in Hexadecimal Format
             int a = 0x00FE;
             Console.WriteLine(a);
+            //Unicode Character
             char ch = '\u002A';
             Console.WriteLine(ch);
+            //Boolean Variable
             bool isFemale = false;
             Console.WriteLine(isFemale);
-            string hello = "Hello";
-            string world = "world";
-            object helloWorld = hello + " " + world;
-            string final = helloWorld.ToString();
-            Console.WriteLine(final);
         }
     }
 }

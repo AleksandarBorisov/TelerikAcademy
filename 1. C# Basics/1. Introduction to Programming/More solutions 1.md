@@ -1,14 +1,4 @@
 ﻿## Още няколко интересни варианта на задачите
-### Изведете надписа Hello, C#! на конзолата:
-```C#
-class HelloCSharp
-{
-	static void Main()
-	{
-		System.Console.WriteLine("Hello, C#!");
-	}
-}
-```
 ### По въведена рожденна дата изведете настоящата и възрастта след 10 години:
 ```C#
 	DateTime birthDay;

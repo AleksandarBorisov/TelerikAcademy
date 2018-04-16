@@ -3,23 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul3", "Modul3\Modul3.csproj", "{9FA6A1DB-88DE-4F56-BFAE-182410543153}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddOrEven", "OddOrEven\OddOrEven.csproj", "{D67CEE71-DC9E-4681-A3DF-752C185426B8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoonGravity", "MoonGravity\MoonGravity.csproj", "{E173FE0E-4628-41BC-AF4E-A990047AF590}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Divisionbt5and7", "Divisionbt5and7\Divisionbt5and7.csproj", "{DCFF2424-2448-4C33-9549-FAB506566F52}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Divisionby5and7", "Divisionby5and7\Divisionby5and7.csproj", "{DCFF2424-2448-4C33-9549-FAB506566F52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "reactangle", "reactangle\reactangle.csproj", "{1CD0C9F2-F30A-427F-9CAC-24F1F44767A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rectangles", "Rectangles\Rectangles.csproj", "{1CD0C9F2-F30A-427F-9CAC-24F1F44767A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenOrNot", "7OrNot\SevenOrNot.csproj", "{9456DAA7-AB06-4C3A-8ABF-A04F6B0F7F86}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdDigit", "ThirdDigit\ThirdDigit.csproj", "{9456DAA7-AB06-4C3A-8ABF-A04F6B0F7F86}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FourDigits", "FourDigits\FourDigits.csproj", "{5D16E0C0-2005-4902-A9D3-0EA8A7BB3961}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointInCircle", "PointInCircle\PointInCircle.csproj", "{C03CF352-3EEF-474E-9EAB-04D723D92910}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsItPrime", "IsItPrime\IsItPrime.csproj", "{35EAFF53-2F03-46E6-B619-BEBA6DD8E87E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeCheck", "PrimeCheck\PrimeCheck.csproj", "{35EAFF53-2F03-46E6-B619-BEBA6DD8E87E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trapezoid", "Trapezoid\Trapezoid.csproj", "{54546E85-B76F-4564-BFA6-3718233817B9}"
 EndProject
@@ -41,10 +39,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9FA6A1DB-88DE-4F56-BFAE-182410543153}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9FA6A1DB-88DE-4F56-BFAE-182410543153}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9FA6A1DB-88DE-4F56-BFAE-182410543153}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9FA6A1DB-88DE-4F56-BFAE-182410543153}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D67CEE71-DC9E-4681-A3DF-752C185426B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D67CEE71-DC9E-4681-A3DF-752C185426B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D67CEE71-DC9E-4681-A3DF-752C185426B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
