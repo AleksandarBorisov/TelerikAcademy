@@ -23,7 +23,7 @@ namespace Arrow
                 new string('.', innerDots));
             outerDots = 1;
             innerDots = 2 * n - 5;
-            for (int bottom = 0; bottom < n-2; bottom++)
+            for (int bottom = 0; bottom < n - 2; bottom++)
             {
                 Console.WriteLine("{0}#{1}#{0}",
                     new string('.', outerDots),
@@ -32,7 +32,7 @@ namespace Arrow
                 innerDots -= 2;
             }
             Console.WriteLine("{0}#{0}",
-                new string('.',outerDots));
+                new string('.', outerDots));
         }
     }
 }

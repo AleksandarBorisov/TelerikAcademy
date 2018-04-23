@@ -26,7 +26,7 @@ namespace MinMaxSumAve
             Console.WriteLine("min={0:F2}", smalestNumber);
             Console.WriteLine("max={0:F2}", biggestNumber);
             Console.WriteLine("sum={0:F2}", sum);
-            Console.WriteLine("avg={0:F2}", sum/n);
+            Console.WriteLine("avg={0:F2}", sum / n);
         }
     }
 }

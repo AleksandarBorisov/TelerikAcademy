@@ -12,20 +12,25 @@ namespace LettersCombinations
             int count = 0;
             for (char i = firstLetter; i <= lastLetter; i++)
             {
-                for (char j = firstLetter; j <= lastLetter; j++)
+                if (i != skipLetter)
                 {
-                    for (char k = firstLetter; k <= lastLetter; k++)
+                    for (char j = firstLetter; j <= lastLetter; j++)
                     {
-                        if (i != skipLetter && j != skipLetter && k != skipLetter)
+                        if (j != skipLetter)
                         {
-                            Console.Write("{0}{1}{2} ", i, j, k);
-                            count++;
+                            for (char k = firstLetter; k <= lastLetter; k++)
+                            {
+                                if (k != skipLetter)
+                                {
+                                    Console.Write("{0}{1}{2} ", i, j, k);
+                                    count++;
+                                }
+                            }
                         }
                     }
                 }
             }
             Console.WriteLine(count);
-
         }
     }
 }

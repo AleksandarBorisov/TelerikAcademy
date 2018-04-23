@@ -22,7 +22,7 @@ namespace StopNumber
 
             //}
             int i = m;
-            while (i>=n)
+            while (i >= n)
             {
                 if (i % 2 == 0 && i % 3 == 0)
                 {

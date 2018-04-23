@@ -6,20 +6,18 @@ namespace TrailingZeroes
     {
         static void Main()
         {
-
-                int n = int.Parse(Console.ReadLine());
-                int counter = 0;
-                for (int i = 1; i <= n; i++)
+            int n = int.Parse(Console.ReadLine());
+            int counter = 0;
+            for (int i = 1; i <= n; i++)
+            {
+                int k = i;
+                while (k % 5 == 0)
                 {
-                    int k = i;
-                    while (k % 5 == 0)
-                    {
-                        k /= 5;
-                        counter++;
-                    }
+                    k /= 5;
+                    counter++;
                 }
-                Console.WriteLine(counter);
-
+            }
+            Console.WriteLine(counter);
         }
     }
 }

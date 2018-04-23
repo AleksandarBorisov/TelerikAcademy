@@ -36,7 +36,7 @@ namespace Grades
                     countOfExcellent++;
                 }
             }
-            Console.WriteLine("Top students: {0:F2}%", (double)countOfExcellent *100/ n);
+            Console.WriteLine("Top students: {0:F2}%", (double)countOfExcellent * 100 / n);
             Console.WriteLine("Between 4.00 and 4.99: {0:F2}%", (double)countOfGood * 100 / n);
             Console.WriteLine("Between 3.00 and 3.99: {0:F2}%", (double)countOfAverage * 100 / n);
             Console.WriteLine("Fail: {0:F2}%", (double)countOfFailed * 100 / n);

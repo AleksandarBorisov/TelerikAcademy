@@ -6,34 +6,18 @@ namespace BintoDec
     {
         static void Main()
         {
-                string number = Console.ReadLine();
-                string buffer = null;
-                long end = (long)Math.Pow(2, number.Length);
-                int move = (number.Length) - 1;
-                long k;
-                for (long i = 0; i < end; i++)
+            string number = Console.ReadLine();
+            int sum = 0;
+            int power = 0;
+            for (int i = 0; i < number.Length; i++)
+            {
+                if (number[i] == '1')
                 {
-                    for (long j = end / 2; j >= 1; j /= 2)
-                    {
-                        k = i & j;
-                        k = k >> move;
-                        if (k == 0)
-                        {
-                            buffer += 0;
-                        }
-                        else
-                        {
-                            buffer += 1;
-                        }
-                        move--;
-                    }
-                    if (number == buffer)
-                    {
-                        Console.WriteLine(i);
-                    }
-                    buffer = null;
-                    move = (number.Length) - 1;
+                    power = number.Length - 1 - i;
+                    sum += (int)Math.Pow(2, power);
                 }
+            }
+            Console.WriteLine(sum);
         }
     }
 }

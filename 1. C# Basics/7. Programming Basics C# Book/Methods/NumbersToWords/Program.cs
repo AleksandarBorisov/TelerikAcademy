@@ -24,8 +24,7 @@ namespace NumbersToWords
                 Console.WriteLine("too small");
             }
             else if (number > 99 || number < -99)
-            {
-
+            {//Гарантира че числото е съставено от три цифри
                 if (number < 0)
                 {
                     Console.Write("minus ");
@@ -36,7 +35,7 @@ namespace NumbersToWords
                 int units = (number / 1) % 10;
                 PrintHundreds(hundreds);
                 if (tens != 0 || units != 0)
-                {
+                {//Проверяваме дали имаме десетици и единици
                     Console.Write("and ");
                 }
                 if (tens == 1)

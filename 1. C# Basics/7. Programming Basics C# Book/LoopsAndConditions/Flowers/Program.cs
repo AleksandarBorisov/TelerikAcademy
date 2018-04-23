@@ -37,7 +37,7 @@ namespace Flowers
                     rose * roseWarm + tulip * tulipWarm;
                 if (tulip > tulipPriceDecreaseTreshold && season == "Spring")
                 {
-                    bouquet -= (decimal)tulipPriceDecreasePercentage/100*bouquet;
+                    bouquet -= (decimal)tulipPriceDecreasePercentage / 100 * bouquet;
                 }
             }
             else
@@ -46,16 +46,16 @@ namespace Flowers
                     rose * roseCold + tulip * tulipCold;
                 if (rose >= rosePriceDecreaseTreshold && season == "Winter")
                 {
-                    bouquet -= (decimal)rosePriceDecreasePercentage/100*bouquet;
+                    bouquet -= (decimal)rosePriceDecreasePercentage / 100 * bouquet;
                 }
             }
             if (holiday == 'Y')
             {
-                bouquet += (decimal)priceIncreasePercentage/100*bouquet;
+                bouquet += (decimal)priceIncreasePercentage / 100 * bouquet;
             }
             if (chrysanthemum + rose + tulip > totalPriceDecreaseTreshold)
             {
-                bouquet -= (decimal)totalPriceDecreasePercentage/100*bouquet;
+                bouquet -= (decimal)totalPriceDecreasePercentage / 100 * bouquet;
             }
             Console.WriteLine("{0:F2}", bouquet + arrangePrice);
         }

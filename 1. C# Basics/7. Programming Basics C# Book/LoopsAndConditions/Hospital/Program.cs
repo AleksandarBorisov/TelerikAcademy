@@ -22,8 +22,8 @@ namespace Hospital
                 patients = int.Parse(Console.ReadLine());
                 if (patients > doctors)
                 {
-                    unTreatedPatients += patients - doctors;
                     treatedPatients += doctors;
+                    unTreatedPatients += patients - doctors;
                 }
                 else
                 {

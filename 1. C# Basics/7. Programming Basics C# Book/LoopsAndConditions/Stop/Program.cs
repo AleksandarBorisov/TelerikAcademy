@@ -16,7 +16,6 @@ namespace Stop
             dots--;
             for (int top = 0; top < n; top++)
             {
-
                 Console.WriteLine("{0}//{1}\\\\{0}",
                     new string('.', dots),
                     new string('_', lineMid));

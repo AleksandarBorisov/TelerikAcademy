@@ -7,14 +7,14 @@ namespace RhombusOfStars
         static void Main()
         {
             int n = int.Parse(Console.ReadLine());
-            for (int row = 1 ; row <= n; row++)
+            for (int row = 1; row <= n; row++)
             {
-                for (int col = 1; col <= n-row; col++)
+                for (int col = 1; col <= n - row; col++)
                 {
                     Console.Write(" ");
                 }
                 Console.Write("*");
-                for (int col = 1; col <= row-1; col++)
+                for (int col = 1; col <= row - 1; col++)
                 {
                     Console.Write(" *");
                 }
@@ -27,7 +27,7 @@ namespace RhombusOfStars
                     Console.Write(" ");
                 }
                 Console.Write("*");
-                for (int col = 1; col < n-row; col++)
+                for (int col = 1; col < n - row; col++)
                 {
                     Console.Write(" *");
                 }

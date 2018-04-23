@@ -18,18 +18,17 @@ namespace StringEncryption
         static string Encrypt(char letter)
         {
             int asciiCode = letter;
-            int currentAsciiDigit = asciiCode % 10;
-            int lastAsciiDigit = currentAsciiDigit;
-            string firstEncryption = string.Empty;
-            asciiCode = asciiCode / 10;
-            while (asciiCode != 0)
-            {
-                currentAsciiDigit = asciiCode % 10;
-                firstEncryption = currentAsciiDigit.ToString() + lastAsciiDigit;
-                asciiCode = asciiCode / 10;
+            int lastAsciiDigit = asciiCode % 10;
+            int firstAsciiDigit = lastAsciiDigit;
+            string firstEncryption = firstAsciiDigit.ToString() + lastAsciiDigit;
+            while (asciiCode > 9)
+            {//Проверяваме дали числото е поне с две цифри
+                asciiCode = asciiCode / 10;//Махаме последната цифра
+                firstAsciiDigit = asciiCode % 10;
+                firstEncryption = firstAsciiDigit.ToString() + lastAsciiDigit;
             }
             string secondEncryption = (char)(letter + lastAsciiDigit) + firstEncryption;
-            string thirdEncryption = secondEncryption + (char)(letter - currentAsciiDigit);
+            string thirdEncryption = secondEncryption + (char)(letter - firstAsciiDigit);
             return thirdEncryption;
         }
     }

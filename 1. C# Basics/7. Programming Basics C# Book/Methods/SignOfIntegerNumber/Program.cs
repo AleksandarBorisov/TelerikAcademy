@@ -11,9 +11,9 @@ namespace SignOfIntegerNumber
         }
         static void PrintSign(int n)
         {
-            if (n>0)
+            if (n > 0)
             {
-                Console.WriteLine("The number {0} is positive.",n );
+                Console.WriteLine("The number {0} is positive.", n);
             }
             if (n < 0)
             {

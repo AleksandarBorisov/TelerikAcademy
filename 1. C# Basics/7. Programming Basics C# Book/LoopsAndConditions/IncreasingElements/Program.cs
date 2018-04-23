@@ -14,10 +14,10 @@ namespace IncreasingElements
             for (int i = 0; i < n; i++)
             {
                 number = int.Parse(Console.ReadLine());
-                if (previousNumber<number)
+                if (previousNumber < number)
                 {
                     count++;
-                    if (count>maxCount)
+                    if (count > maxCount)
                     {
                         maxCount = count;
                     }

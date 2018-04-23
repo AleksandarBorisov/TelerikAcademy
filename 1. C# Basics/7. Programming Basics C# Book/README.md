@@ -4,8 +4,10 @@
 ### Descriptions and detailed explanations of the tasks can be found on the following links:
 #### Tasks: Loops and Conditions
 
+Cinema, VolleyBall, Point in the Figure are [here](https://csharp-book.softuni.bg/chapter-04-complex-conditions.html)  
+On Time For The Exam, Trip, Operations, Match Tickets, Hotel Room are [here](https://csharp-book.softuni.bg/chapter-04-complex-conditions-exam-problems.html)   
 Histogram, Smart Lilly, Back To The Past, Hospital, Division, Ligistics are [here](https://csharp-book.softuni.bg/chapter-05-loops-exam-problems.html)  
-Rhombus Of Stars, Christmas Tree, Sunglasses, House, Diamond are [here](https://csharp-book.softuni.bg/chapter-06-nested-loops.html)
+Rhombus Of Stars, Christmas Tree, Sunglasses, House, Diamond are [here](https://csharp-book.softuni.bg/chapter-06-nested-loops.html)  
 Draw Fort, Butterfly, Stop, Arrow, Axe are [here](https://csharp-book.softuni.bg/chapter-06-nested-loops-exam-problems.html)  
 Number Table is [here](https://csharp-book.softuni.bg/chapter-07-complex-loops.html)  
 Stupid Password Genarator, Magic Combination, Stop Number, Special Numbers, Digits are [here](https://csharp-book.softuni.bg/chapter-07-complex-loops-exam-problems.html)  

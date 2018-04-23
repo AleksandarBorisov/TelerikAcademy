@@ -29,7 +29,6 @@ namespace RectangleWithStars
                 Console.WriteLine("%");
             }
             Console.WriteLine(new string('%', 2 * n));
-
         }
     }
 }

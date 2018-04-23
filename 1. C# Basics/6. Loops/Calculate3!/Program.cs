@@ -7,26 +7,32 @@ namespace Calculate3_
     {
         static void Main()
         {
-            while (true)
+            //while (true)
+            //{
+            BigInteger n = BigInteger.Parse(Console.ReadLine());
+            BigInteger k = BigInteger.Parse(Console.ReadLine());
+            BigInteger divisor = 1;
+            BigInteger faktorial = 1;
+            for (int i = 1; i <= n; i++)
             {
-                BigInteger n = BigInteger.Parse(Console.ReadLine());
-                BigInteger k = BigInteger.Parse(Console.ReadLine());
-                BigInteger divisor = 1;
-                BigInteger faktorial = 1;
-                for (int i = 1; i <= n; i++)
+                if (i <= (n - k))
                 {
-                    if (i <= (n - k))
-                    {
-                        divisor *= i;
-                    }
-                    if (i > k)
-                    {
-                        faktorial *= i;
-                    }
+                    divisor *= i;
                 }
-                Console.WriteLine(faktorial / divisor);
-                Console.WriteLine();
+                if (i > k)
+                {
+                    faktorial *= i;
+                }
             }
+            Console.WriteLine(faktorial / divisor);
+            Console.WriteLine();
+            //Вариант на същата задача
+            //for (BigInteger i = n; i >= n - k + 1; i--)
+            //{
+            //    faktorial *= i;
+            //    divisor *= n - i + 1;
+            //}
+            //}
         }
     }
 }

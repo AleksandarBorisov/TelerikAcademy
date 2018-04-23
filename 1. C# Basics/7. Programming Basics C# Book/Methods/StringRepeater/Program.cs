@@ -8,7 +8,7 @@ namespace StringRepeater
         {
             string stringForRepeating = Console.ReadLine();
             int count = int.Parse(Console.ReadLine());
-            string repeating = RepeatString(stringForRepeating,count);
+            string repeating = RepeatString(stringForRepeating, count);
             Console.WriteLine(repeating);
         }
         static string RepeatString(string str, int count)

@@ -96,11 +96,11 @@
         for (long i = 1; i <= n; i++)
         {
             if ((i >= (n - k + 1)) && (i <= k)) 
-            {
+            {//Числителя се изменя от N-K+1 до К, защото другото се съкращава
                 multiplier *= i;
             }
             if ((i >= (k + 1)) && (i <= (n - k)))
-            {
+            {//Знаменателя се изменя от K+1 до N-K, защото другото се съкращава
                 divisor *= i;
             }
             faktorial *= i;
@@ -141,36 +141,79 @@
         }
         Console.WriteLine("Сумата за n={0} и x={1} e: {2}.",n,x,sum);
 ```
-### Задача с нещо като магически квадрати:
+### Задача Matrix Of Numbers решена с два цикъла:
 ```C#
 	Console.Write("Въведете N: ");
         int n = int.Parse(Console.ReadLine());
         for (int i = 1; i <= n; i++)
         {
-            for (int j = i; j <= (n+i-1); j++)
+            for (int j = i; j <= (n + i - 1); j++)
             {
                 Console.Write(j+" ");
             }
             Console.WriteLine();
         }
 ```
-### Същото условие, решено с един цикъл:
+### Odd and Even Product като вариант:
 ```C#
-	Console.Write("Въведете N: ");
-        int n = int.Parse(Console.ReadLine());
-        int counter = 0;
-        for (int i = 1; (i <= n + counter) && (counter < n); i++)
-        {
-            if (i == (n+counter))
+	int n = int.Parse(Console.ReadLine());
+        string numbers = Console.ReadLine() + " ";
+        int odd = 1;
+        int even = 1;
+        int number = 0;
+        bool isOdd = true;
+        for (int i = 0; i < 2 * n; i++)
+        {//2 * n с включените празни места
+            if (char.IsWhiteSpace(numbers[i]))
             {
-                Console.WriteLine(i+" ");
-                counter++;
-                i = counter;
+                if (isOdd)
+                {
+                    odd *= number;
+                }
+                else
+                {
+                    even *= number;
+                }
+                isOdd = !isOdd;
+                number = 0;
             }
             else
             {
-                Console.Write(i+" ");
+                number = number * 10 + (numbers[i] - '0');
             }
+        }
+        Console.WriteLine(even == odd ? "yes " + even : "no " + odd + " " + even);
+```
+### Odd and Even Product като още един вариант:
+```C#
+	int n = int.Parse(Console.ReadLine());
+        char number = (char)Console.Read();
+        int odd = 1;
+        int even = 1;
+        int result = 0;
+        bool isOdd = true;
+        do
+        {
+            if (char.IsWhiteSpace(number))
+            {
+                if (isOdd)
+                {
+                    odd *= result;
+                }
+                else
+                {
+                    even *= result;
+                }
+                isOdd = !isOdd;
+                result = 0;
+            }
+            else
+            {
+                result = result * 10 + (number - '0');
+            }
+            number = (char)Console.Read();
+        } while (number != '\n');
+        Console.WriteLine(even == odd ? "yes " + even : "no " + odd + " " + even);
 ```
 ### Програма, която пресмята с колко нули завършва факториела на дадено число:
 ```C#
@@ -218,51 +261,37 @@
 	}
 ```
 ### Преобразуване на число от двоична в десетична бройна система:
+_Първи вариант, при който се достига лимита от време_
 ```C#
 	Console.Write("Число в двоична система: ");
         string number = Console.ReadLine();
         string buffer=null;
-        int end = (int) Math.Pow(2, number.Length);
+        long end = (long) Math.Pow(2, number.Length);
         int move = (number.Length)-1;
-        int k;
-        for (int i = 1; i <= end; i++)
+        long k;
+        for (long i = 0; i < end; i++)
         {
-            for (int j = end/2; j >= 1; j /= 2)//Взимаме битовете от всяка позиция поотделно
-            {
+            for (long j = end/2; j >= 1; j /= 2)//Последователно взимаме всеки бит от съответната
+            {//позиция отляво надясно (Пример: 1-нулева, 2-първа, 4-втора и т.н.)
                 k = i & j;
-                k = k >> move;
+                k = k >> move;//Местим битовете отляво най-вдясно на нулевата позиция
                 if(k==0)
                 {
                     buffer += 0;
-                }
+                }//Проверяваме какъв е съответния бит и записваме
                 else
                 {
                     buffer += 1;
                 }
-                move--;
+                move--;//Отиваме на следващата позиция вдясно
             }
             if(number==buffer)
-            {
+            {//Ако числата съвпаднат сме намерили нашето число
                 Console.WriteLine("Числото в десетична е: " + i);
             }
             buffer = null;
             move = (number.Length) - 1;
 	}
-```
-### Същото усовие, друг начин на решение(в ПЪТИ по бърз):
-```C#
-	string number = Console.ReadLine();
-        int sum = 0;
-        int power = 0;
-        for (int i = 0; i < number.Length; i++)
-        {
-            if (number[i] == '1')
-            {
-                power = number.Length - 1 - i;
-                sum += (int)Math.Pow(2, power);
-            }
-        }
-        Console.WriteLine(sum);
 ```
 ### Преобразуване на число от десетична в шестнайсетична бройна система:
 ```C#
@@ -317,46 +346,7 @@
             }
             Console.WriteLine("Числото в десетична система: " + sum);
 ```
-### Същото усовие, друг начин на решение(в ПЪТИ по бърз):
-```C#
-	string number = Console.ReadLine();
-        long dec = 0;
-        for (int i = 0; i < number.Length; i++)
-        {
-            switch (number[i])
-            {
-                case 'A': dec += 10 * (long)Math.Pow(16, number.Length - i - 1); break;
-                case 'B': dec += 11 * (long)Math.Pow(16, number.Length - i - 1); break;
-                case 'C': dec += 12 * (long)Math.Pow(16, number.Length - i - 1); break;
-                case 'D': dec += 13 * (long)Math.Pow(16, number.Length - i - 1); break;
-                case 'E': dec += 14 * (long)Math.Pow(16, number.Length - i - 1); break;
-                case 'F': dec += 15 * (long)Math.Pow(16, number.Length - i - 1); break;
-                default: dec += (int)char.GetNumericValue(number[i]) * (long)Math.Pow(16, number.Length - i - 1); break;
-            }
-        }
-        Console.WriteLine(dec);
-        Console.WriteLine();
-```
 ### Най-голям общ делител на две числа (Алгоритъм на Евклид):
-```C#
-	Console.Write("Въведете число A: ");
-        int? a = int.Parse(Console.ReadLine());
-        Console.Write("Въведете число B: ");
-        int? b = int.Parse(Console.ReadLine());
-        while((a!=b)&&(a>0)&&(b>0))
-        {
-            if(a > b)
-            {
-                a = a - b;
-            }
-            else
-            {
-                b = b - a;
-            }
-        }
-        Console.WriteLine("Най-големият общ делител на числата е: {0}", (a ?? b));
-```
-### Най-голям общ делител на две числа (Алгоритъм на Евклид 2 вариант):
 ```C#
 	int a = int.Parse(Console.ReadLine());
         int b = int.Parse(Console.ReadLine());
@@ -369,60 +359,20 @@
         }
         Console.WriteLine(b);
 ```
-### SpiralMatrix:
+### Най-голям общ делител на две числа (Алгоритъм на Евклид):
+_Още един вариант, възможно най-кратък_
 ```C#
-	int n = int.Parse(Console.ReadLine());
-        int[,] matrix = new int[n, n];
-        int counter = 1;
-        int row = 0;
-        int col = 0;
-        int endIndex = ((n % 2 == 0) ? (n / 2 - 1) : (n / 2));
-        //Индекса се определя от броя вписани квадрати във външния
-        //Оркрих зависимостта:  (n)1 2 3 4 5 6 7 8...
-        //       (вписани квадрати)0 0 1 1 2 2 3 3...
-        for (int index = 0; index <= endIndex; index++)
+	int a = int.Parse(Console.ReadLine());
+        int b = int.Parse(Console.ReadLine());
+        while (b != 0)
         {
-            while (col + index < n - index)
-            {
-                matrix[row + index, col + index] = counter;
-                counter++;
-                col++;
-            }
-            col--;
-            counter--;
-            while (row + index < n - index)//Само фиксира колко пъти да се изпълни(може да се запипе и row<n-2*index)
-            {
-                matrix[row + index, col + index] = counter;//фиксира откъде да започне да се изпълнява(винаги по главния диагонал)
-                counter++;
-                row++;
-            }
-            row--;
-            counter--;
-            while (col >= 0)
-            {
-                matrix[row + index, col + index] = counter;
-                counter++;
-                col--;
-            }
-            col++;
-            counter--;
-            while (row > 0)
-            {
-                matrix[row + index, col + index] = counter;
-                counter++;
-                row--;
-            }
+            var oldB = b;
+            b = a % b;
+            a = oldB;
         }
-        for (int i = 0; i < n; i++)
-        {
-            for (int j = 0; j < n; j++)
-            {
-                Console.Write(" " + matrix[i, j]);
-            }
-       	    Console.WriteLine();
-        }
+        Console.WriteLine(a);
 ```
-### SpiralMatrix(по кратко решение от един пичага):
+### SpiralMatrix(вариант на по-кратко решение):
 ```C#
 	System.Console.SetWindowSize(100, 30);
 	int n = int.Parse(Console.ReadLine());
@@ -479,7 +429,7 @@
             Console.WriteLine("out of range");
         }
 ```
-### SpiralMatrix(решение от още един пичага):
+### SpiralMatrix(още един по-кратък вариант):
 ```C#
 	int n = int.Parse(Console.ReadLine());
         int[,] matrix = new int[n, n];

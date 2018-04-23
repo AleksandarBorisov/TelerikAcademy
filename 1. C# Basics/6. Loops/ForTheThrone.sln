@@ -37,7 +37,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiralMatrix", "SpiralMatri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDivisableNumbers", "NotDivisableNumbers\NotDivisableNumbers.csproj", "{F26752B3-0D29-4BA5-A1E5-34E78ECC4CF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromLessonToto", "FromLessonToto\FromLessonToto.csproj", "{9DD7508D-D5F3-408E-A9BB-D142CC03D2FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.Toto", "1.Toto\1.Toto.csproj", "{9DD7508D-D5F3-408E-A9BB-D142CC03D2FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -13,7 +13,7 @@ namespace MagicDates
             DateTime endDate = new DateTime(endYear, 12, 31);
             bool dateFound = false;
             for (DateTime currentDate = startDate; currentDate <= endDate; currentDate = currentDate.AddDays(1))
-            {//условието може да бъде и currentDate.Year<=endYear тъй като това няма да се изпълни чак когато влезнем в другата година
+            {//Условието може да бъде и currentDate.Year <= endYear тъй като това няма да се изпълни чак когато влезнем в другата година
                 int d1 = currentDate.Day / 10;
                 int d2 = currentDate.Day % 10;
                 int d3 = currentDate.Month / 10;
@@ -25,11 +25,12 @@ namespace MagicDates
                 int currentWeight = d1 * (d2 + d3 + d4 + d5 + d6 + d7 + d8) + d2 * (d3 + d4 + d5 + d6 + d7 + d8)
                     + d3 * (d4 + d5 + d6 + d7 + d8) + d4 * (d5 + d6 + d7 + d8) + d5 * (d6 + d7 + d8) + d6 * (d7 + d8) + d7 * d8;
                 //string dateAsString = currentDate.ToString("ddMMyyyy");
+                //int currentWeight = 0;
                 //for (int j = 0; j < dateAsString.Length; j++)
                 //{
                 //    for (int k = j + 1; k < dateAsString.Length; k++)
                 //    {
-                //        currentWeight += int.Parse(dateAsString[j].ToString()) * int.Parse(dateAsString[k].ToString());
+                //        currentWeight += ((dateAsString[j] - '0') * (dateAsString[k] - '0'));
                 //    }
                 //}
                 if (currentWeight == weightNumber)

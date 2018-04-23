@@ -13,15 +13,18 @@ namespace CrossingSequences
             long step = long.Parse(Console.ReadLine());
             int stepMult = 1;
             int stepCounter = 0;
-            long tribonacciForth = tribonacciFirst;//Трябва да започнем от първото число, защото ако започнем от третото и първите три числа са в
-            //намаляваща редица ще изпуснем число(например 5, 2, 1 и зададено първо число на спиралата 3 със стъпка 1)
+            bool isFound = false;
+            long tribonacciForth = tribonacciFirst;//Трябва да започнем от първото число, защото ако започнем от 
+            //третото и първите три числа са в намаляваща редица ще изпуснем число
+            //(например 5, 2, 1 и зададено първо число на спиралата 3 със стъпка 1)
             while (tribonacciThird <= 1000000 && startingNumber <= 1000000)
             {
                 if (tribonacciFirst == startingNumber || tribonacciSecond == startingNumber ||
                     tribonacciThird == startingNumber)
                 {
                     Console.WriteLine(startingNumber);
-                    return;
+                    isFound = true;
+                    break;
                 }
                 else if (tribonacciForth < startingNumber)
                 {
@@ -34,14 +37,16 @@ namespace CrossingSequences
                 {
                     startingNumber += stepMult * step;
                     stepCounter++;
-                    if (stepCounter == 2)
+                    if (stepCounter % 2 == 0)
                     {
                         stepMult++;
-                        stepCounter = 0;
                     }
                 }
             }
-            Console.WriteLine("No");
+            if (!isFound)
+            {
+                Console.WriteLine("No");
+            }
         }
     }
 }

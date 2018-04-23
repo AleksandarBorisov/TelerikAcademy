@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IfThisWasJustADream", "IfThisWasJustADream\IfThisWasJustADream.csproj", "{61039144-50B5-4AE7-A840-2D0B348EEBFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeNumbers", "ExchangeNumbers\ExchangeNumbers.csproj", "{BEA92909-071A-45CF-8C2A-B37E9BD9E4A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IfGreater", "IfGreater\IfGreater.csproj", "{BEA92909-071A-45CF-8C2A-B37E9BD9E4A3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Score", "Score\Score.csproj", "{357FEB98-2239-4E85-9B8F-AC0B6657C75C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BonusScore", "BonusScore\BonusScore.csproj", "{357FEB98-2239-4E85-9B8F-AC0B6657C75C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayCard", "PlayCard\PlayCard.csproj", "{7F033D7C-7E1E-415F-B6EE-A96D191D0B6F}"
 EndProject
@@ -17,13 +15,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiggestOf3", "BiggestOf3\Bi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiggestOf5", "BiggestOf5\BiggestOf5.csproj", "{173B6490-00B4-4071-9529-D47CFDEBF180}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortedNumbers", "SortedNumbers\SortedNumbers.csproj", "{48A406C7-B2EA-4A38-8D86-D845DA7B0771}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sort3Numbers", "Sort3Numbers\Sort3Numbers.csproj", "{48A406C7-B2EA-4A38-8D86-D845DA7B0771}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitAsAWord", "DigitAsAWord\DigitAsAWord.csproj", "{D52D5EC0-C510-4840-B0AC-699A88229F6D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitAsWord", "DigitAsWord\DigitAsWord.csproj", "{D52D5EC0-C510-4840-B0AC-699A88229F6D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntDoubleString", "IntDoubleString\IntDoubleString.csproj", "{0F22C669-152B-4CBE-9C4C-89C6A09F44B0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumOfFive", "SumOfFive\SumOfFive.csproj", "{51725C49-4706-445C-BBAC-31539A4E879D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +27,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{61039144-50B5-4AE7-A840-2D0B348EEBFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{61039144-50B5-4AE7-A840-2D0B348EEBFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{61039144-50B5-4AE7-A840-2D0B348EEBFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{61039144-50B5-4AE7-A840-2D0B348EEBFD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BEA92909-071A-45CF-8C2A-B37E9BD9E4A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BEA92909-071A-45CF-8C2A-B37E9BD9E4A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEA92909-071A-45CF-8C2A-B37E9BD9E4A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -71,10 +63,6 @@ Global
 		{0F22C669-152B-4CBE-9C4C-89C6A09F44B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F22C669-152B-4CBE-9C4C-89C6A09F44B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F22C669-152B-4CBE-9C4C-89C6A09F44B0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{51725C49-4706-445C-BBAC-31539A4E879D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{51725C49-4706-445C-BBAC-31539A4E879D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{51725C49-4706-445C-BBAC-31539A4E879D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{51725C49-4706-445C-BBAC-31539A4E879D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

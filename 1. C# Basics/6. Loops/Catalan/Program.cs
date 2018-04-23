@@ -7,25 +7,19 @@ namespace Catalan
     {
         static void Main()
         {
-            while (true)
-            {
-                BigInteger n = BigInteger.Parse(Console.ReadLine());
-                BigInteger catalan = 1;
-                BigInteger divisor = 1;
-                for (BigInteger i = 1; i <= 2*n; i++)
-                {
-                    if (i>=n+2)
-                    {
-                        catalan *= i;
-                    }
-                    if (i<=n)
-                    {
-                        divisor *= i;
-                    }
-                }
-                Console.WriteLine(catalan/divisor);
-                Console.WriteLine();
+            //while (true)
+            //{
+            BigInteger n = BigInteger.Parse(Console.ReadLine());
+            BigInteger catalan = 1;
+            BigInteger divisor = 1;
+            for (BigInteger i = n + 2; i <= 2 * n; i++)
+            {//Числата до n-1 се съкращават и пресмятаме каквото остане в числителя и знаменателя
+                catalan *= i;
+                divisor *= i - n;
             }
+            Console.WriteLine(catalan / divisor);
+            Console.WriteLine();
+            //}
         }
     }
 }

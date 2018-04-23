@@ -6,34 +6,26 @@ namespace HexToDec
     {
         static void Main()
         {
-            while (true)
+            //while (true)
+            //{
+            string number = Console.ReadLine();
+            long dec = 0;
+            for (int i = 0; i < number.Length; i++)
             {
-                string number = Console.ReadLine();
-                double end = number.Length;
-                double dec = 1;
-                double sum = 0;
-                for (double i = 0; i < end; i++)
+                switch (number[i])
                 {
-                    char last = number[number.Length - 1];
-                    switch (last)
-                    {
-                        case 'A': dec = 10 * Math.Pow(16, i); break;
-                        case 'B': dec = 11 * Math.Pow(16, i); break;
-                        case 'C': dec = 12 * Math.Pow(16, i); break;
-                        case 'D': dec = 13 * Math.Pow(16, i); break;
-                        case 'E': dec = 14 * Math.Pow(16, i); break;
-                        case 'F': dec = 15 * Math.Pow(16, i); break;
-                        default:
-                            int digit = (int)char.GetNumericValue(last);
-                            dec = digit * Math.Pow(16, i);
-                            break;
-                    }
-                    number = number.Remove(number.Length - 1);
-                    sum += dec;
+                    case 'A': dec += 10 * (long)Math.Pow(16, number.Length - i - 1); break;
+                    case 'B': dec += 11 * (long)Math.Pow(16, number.Length - i - 1); break;
+                    case 'C': dec += 12 * (long)Math.Pow(16, number.Length - i - 1); break;
+                    case 'D': dec += 13 * (long)Math.Pow(16, number.Length - i - 1); break;
+                    case 'E': dec += 14 * (long)Math.Pow(16, number.Length - i - 1); break;
+                    case 'F': dec += 15 * (long)Math.Pow(16, number.Length - i - 1); break;
+                    default: dec += (int)char.GetNumericValue(number[i]) * (long)Math.Pow(16, number.Length - i - 1); break;
                 }
-                Console.WriteLine("Числото в десетична система: " + sum);
-                Console.WriteLine();
             }
+            Console.WriteLine(dec);
+            //Console.WriteLine();
+            //}
         }
     }
 }

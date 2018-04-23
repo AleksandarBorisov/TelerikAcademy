@@ -20,8 +20,8 @@ namespace FiveSpecialLetters
                         {
                             for (int t = 0; t < 5; t++)
                             {//Друг вариант е без стринг да използваме ASCII  таблицата 'a'+ i ще ни даде a,b,c,d.... 
+                                //string current = "" + (char)('a' + i) + (char)('a' + k) + (char)('a' + j) + (char)('a' + p) + (char)('a' + t);
                                 string current = "" + pattern[i] + pattern[k] + pattern[j] + pattern[p] + pattern[t];
-                                //string current = ""+(char)('a' + i) + (char)('a' + k) + (char)('a' + j) + (char)('a' + p) + (char)('a' + t);
                                 string unique = "" + current[0];
                                 for (int l = 1; l < 5; l++)
                                 {

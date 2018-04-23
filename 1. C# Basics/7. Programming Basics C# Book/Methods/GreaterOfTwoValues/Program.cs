@@ -9,12 +9,12 @@ namespace GreaterOfTwoValues
             var type = Console.ReadLine();
             if (type == "int")
             {
-            string[] numbers = Console.ReadLine().Split(' ');//Добавих това
-            int first = int.Parse(numbers[0]);
-            int second = int.Parse(numbers[1]);
-            int third = int.Parse(numbers[2]);//х това
-            int max = GetMax(GetMax(first, second),third);
-            Console.WriteLine(max);
+                string[] numbers = Console.ReadLine().Split(' ');//Добавих това
+                int first = int.Parse(numbers[0]);
+                int second = int.Parse(numbers[1]);
+                int third = int.Parse(numbers[2]);//х това
+                int max = GetMax(GetMax(first, second), third);
+                Console.WriteLine(max);
             }
             else if (type == "char")
             {

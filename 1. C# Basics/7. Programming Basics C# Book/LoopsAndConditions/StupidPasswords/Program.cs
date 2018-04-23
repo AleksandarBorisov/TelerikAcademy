@@ -16,9 +16,9 @@ namespace StupidPasswords
                     {
                         for (char l2 = 'a'; l2 < 'a' + l; l2++)
                         {
-                            for (int d3 = Math.Max(d1, d2)+1; d3 <= n; d3++)
+                            for (int d3 = Math.Max(d1, d2) + 1; d3 <= n; d3++)
                             {
-                                Console.Write("{0}{1}{2}{3}{4} ", d1,d2,l1,l2,d3);
+                                Console.Write("{0}{1}{2}{3}{4} ", d1, d2, l1, l2, d3);
                             }
                         }
                     }
