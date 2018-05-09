@@ -33,7 +33,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "MergeSort\Merg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSort", "QuickSort\QuickSort.csproj", "{10C91352-D0C4-4FA8-9D14-58D3B9039DFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForDeleting", "ForDeleting\ForDeleting.csproj", "{2A12C771-5DFC-4898-A746-AE6322ABEBE3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NextPermutation", "NextPermutation\NextPermutation.csproj", "{2A12C771-5DFC-4898-A746-AE6322ABEBE3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumbers", "PrimeNumbers\PrimeNumbers.csproj", "{D31D914A-032B-4673-A0C4-B8CACFD2E7E2}"
 EndProject
@@ -43,13 +43,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubsetKWithSumS", "SubsetKW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveElementsFromArray", "RemoveElementsFromArray\RemoveElementsFromArray.csproj", "{9F230085-B759-4DAE-8BAB-49A915B5A036}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PermutationsOfSet", "PermutationsOfSet\PermutationsOfSet.csproj", "{AA0445FD-9C30-4981-90F3-15D7B8D75C0E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromBookPermutationsOfSet", "FromBookPermutationsOfSet\FromBookPermutationsOfSet.csproj", "{AA0445FD-9C30-4981-90F3-15D7B8D75C0E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VariationsOfSet", "VariationsOfSet\VariationsOfSet.csproj", "{877D5FC2-BE3C-4140-B924-D1C946C529E6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CombinationsOfSet", "CombinationsOfSet\CombinationsOfSet.csproj", "{E6D7731B-EF4B-4893-899A-7619701AB538}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.CountSymbols", "2.CountSymbols\2.CountSymbols.csproj", "{53359C03-9323-41FD-B265-462F7DD0641F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutations", "Permutations\Permutations.csproj", "{F9443A76-993F-4A04-8A65-A6CA954FEA9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CombinationsWithRepetitions", "CombinationsWithRepetitions\CombinationsWithRepetitions.csproj", "{51D31412-D331-46B8-B215-3AE746BE1120}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +157,14 @@ Global
 		{53359C03-9323-41FD-B265-462F7DD0641F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53359C03-9323-41FD-B265-462F7DD0641F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53359C03-9323-41FD-B265-462F7DD0641F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9443A76-993F-4A04-8A65-A6CA954FEA9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9443A76-993F-4A04-8A65-A6CA954FEA9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9443A76-993F-4A04-8A65-A6CA954FEA9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9443A76-993F-4A04-8A65-A6CA954FEA9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51D31412-D331-46B8-B215-3AE746BE1120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51D31412-D331-46B8-B215-3AE746BE1120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51D31412-D331-46B8-B215-3AE746BE1120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51D31412-D331-46B8-B215-3AE746BE1120}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

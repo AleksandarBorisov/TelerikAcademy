@@ -31,17 +31,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegerCalculations", "Inte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberCalculations", "NumberCalculations\NumberCalculations.csproj", "{C0D89FD7-E31C-49C2-82E1-D195B6205A7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromLessonMatrix", "FromLessonMatrix\FromLessonMatrix.csproj", "{EC053424-A1EA-49D5-993A-B099E03526EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.Matrix", "2.Matrix\2.Matrix.csproj", "{EC053424-A1EA-49D5-993A-B099E03526EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromLessonMonths", "FromLessonMonths\FromLessonMonths.csproj", "{8E8F52E5-69CF-43D2-9A45-B08498D56538}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromBookMonths", "FromBookMonths\FromBookMonths.csproj", "{8E8F52E5-69CF-43D2-9A45-B08498D56538}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromLessonPrintingTriangle", "FromLessonPrintingTriangle\FromLessonPrintingTriangle.csproj", "{65DDB5ED-8FF4-44A3-AF86-8B23171F61BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromBookPrintingTriangle", "FromBookPrintingTriangle\FromBookPrintingTriangle.csproj", "{65DDB5ED-8FF4-44A3-AF86-8B23171F61BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromLessonTemperatureConversion", "FromLessonTemperatureConversion\FromLessonTemperatureConversion.csproj", "{86B206A9-9611-412C-8356-4965DAC188AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromBookTemperatureConversion", "FromBookTemperatureConversion\FromBookTemperatureConversion.csproj", "{86B206A9-9611-412C-8356-4965DAC188AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromLessonSortingNumbers", "FromLessonSortingNumbers\FromLessonSortingNumbers.csproj", "{ECF1CBE8-D5E3-4306-ADB5-CD99DFF37494}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromBookSortingNumbers", "FromBookSortingNumbers\FromBookSortingNumbers.csproj", "{ECF1CBE8-D5E3-4306-ADB5-CD99DFF37494}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromLessonDataValidation", "FromLessonDataValidation\FromLessonDataValidation.csproj", "{96F1E04D-51F4-4004-BB03-165B2485D318}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromBookDataValidation", "FromBookDataValidation\FromBookDataValidation.csproj", "{96F1E04D-51F4-4004-BB03-165B2485D318}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.Print", "1.Print\1.Print.csproj", "{6E78B9E2-2011-4C5F-A7FD-9A915C461C9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +131,10 @@ Global
 		{96F1E04D-51F4-4004-BB03-165B2485D318}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96F1E04D-51F4-4004-BB03-165B2485D318}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96F1E04D-51F4-4004-BB03-165B2485D318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E78B9E2-2011-4C5F-A7FD-9A915C461C9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E78B9E2-2011-4C5F-A7FD-9A915C461C9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E78B9E2-2011-4C5F-A7FD-9A915C461C9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E78B9E2-2011-4C5F-A7FD-9A915C461C9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

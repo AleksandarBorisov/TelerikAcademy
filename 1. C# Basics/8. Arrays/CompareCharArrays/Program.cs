@@ -19,13 +19,16 @@ namespace CompareCharArrays
                 }
                 row++;
             }
-            if ((row == minLength) && (firstArray.Length == secondArray.Length))
-            {
-                Console.WriteLine('=');
-            }
-            else if((row == minLength))
-            {
-                Console.WriteLine(firstArray.Length > secondArray.Length ? '>' : '<');
+            if (row == minLength)
+            {//Проверяваме дали сме обходили по-късия масив
+                if (firstArray.Length == secondArray.Length)
+                {
+                    Console.WriteLine('=');
+                }
+                else
+                {
+                    Console.WriteLine(firstArray.Length > secondArray.Length ? '>' : '<');
+                }
             }
         }
     }

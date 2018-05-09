@@ -10,7 +10,7 @@ namespace _2.CountSymbols
             string input = Console.ReadLine();
             int[] unicode = new int[127];
             for (int i = 0; i < input.Length; i++)
-            {
+            {//input[i] е char който се каства към int и става индекс
                 unicode[input[i]]++;
             }
             for (int i = 0; i < unicode.Length; i++)

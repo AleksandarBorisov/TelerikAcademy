@@ -16,7 +16,7 @@ namespace MergeSort
             for (int iteration = 1; iteration < n; iteration *= 2)
             {//result трябва да го дефинираме наново на всяка итерация, за да сочи към различни елементи от паметта
                 int[] result = new int[n];//Помощен масив, в който ще записваме променените стойности
-                for (int leftStart = 0; leftStart < unsortedArray.Length; leftStart += 2 * iteration)//начало на левия елемент
+                for (int leftStart = 0; leftStart < unsortedArray.Length; leftStart += 2 * iteration)//Начало на левия елемент
                 {
                     int rightStart = Math.Min(leftStart + iteration, unsortedArray.Length);//начало на десния елемент
                     int rightEnd = Math.Min(leftStart + (2 * iteration), unsortedArray.Length);//край на десния елемент
@@ -24,17 +24,17 @@ namespace MergeSort
                     int leftStartDynamic = leftStart;//Въвеждаме го само защото leftStart трябва да остане непроменено
                     for (int resultIndex = leftStartDynamic; resultIndex < rightEnd; resultIndex++)
                     {
-                        //Ако не сме изчерпали левия край и (сме изчерпали десния или левия елемент < десния елемент)
+                        //Ако не сме изчерпали левия край и (сме изчерпали десния или левия елемент <= десния елемент)
                         if (leftStartDynamic <= leftEnd && 
                            (rightStart >= rightEnd || unsortedArray[leftStartDynamic] <= unsortedArray[rightStart]))
-                        {//Когато rightStart >= rightEnd е true тогава другото условия в || конструкцията въобще не се
+                        {//Когато rightStart >= rightEnd е true тогава другото условие в || конструкцията въобще не се
                          //проверява, затова когато rightStart е извън границите на масива не ни връща exception
                             result[resultIndex] = unsortedArray[leftStartDynamic];
                             leftStartDynamic++;
                         }
                         //Ако не сме изчерпали десния край и сме изчерпали левия или левия елемент > десния елемент
-                        else
-                        {
+                        else//При else-а условието изглежда така ..rightStart < rightEnd..., т.е. rightStart неможе да 
+                        {//е равно на rightEnd, затова не е проблем че дефинираме rightEnd с единица повече отколкото трябва да е
                             result[resultIndex] = unsortedArray[rightStart];
                             rightStart++;
                         }

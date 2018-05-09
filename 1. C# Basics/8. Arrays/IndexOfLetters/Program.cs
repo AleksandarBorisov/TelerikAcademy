@@ -6,7 +6,7 @@ namespace IndexOfLetters
     {
         static void Main()
         {
-            char[] alphabet = new char['z'-'a'+1];//задаваме големината да е колкото са всички букви от азбуката
+            char[] alphabet = new char['z' - 'a' + 1];//Задаваме големината да е колкото са всички букви от азбуката
             for (char i = 'a'; i <= 'z'; i++)
             {
                 alphabet[i - 'a'] = i;
@@ -14,7 +14,7 @@ namespace IndexOfLetters
             string word = Console.ReadLine();
             foreach (var letter in word)
             {
-                Console.WriteLine("Letter '{0}' - index in the alphabet => {1,2} and the ASCII code => {2}",letter,Array.IndexOf(alphabet,letter),(int)letter);
+                Console.WriteLine("Letter '{0}' - index in the alphabet => {1,2} and the ASCII code => {2}", letter, Array.IndexOf(alphabet, letter), (int)letter);
             }
 
             //int position = 0;
@@ -26,7 +26,6 @@ namespace IndexOfLetters
             //char[] word = Console.ReadLine().ToCharArray();
             //for (int smallLetter = 0; smallLetter < word.Length; smallLetter++)
             //{
-                
             //    for (position = 0; position < lastLetter - firstLetter + 1; position++)
             //    {
             //        if (word[smallLetter]==alphabet[position])

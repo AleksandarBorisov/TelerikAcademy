@@ -10,7 +10,7 @@ namespace FrequentNumber
             int[] numbers = new int[n];
             int mvp = 0;
             int count = 1;
-            int counter = 0;
+            int counter = 0;//Индекса на елемента, с който ще сравним всички останали
             int maxCount = 1;
             for (int index = 0; index < n; index++)
             {
@@ -33,8 +33,8 @@ namespace FrequentNumber
                     index = counter;
                     count = 1;
                 }
-             }
-            Console.WriteLine("{0} ({1} times)",mvp,maxCount);
+            }
+            Console.WriteLine("{0} ({1} times)", mvp, maxCount);
         }
     }
 }

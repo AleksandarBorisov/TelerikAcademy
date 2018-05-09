@@ -16,7 +16,7 @@ namespace MaximalSequence
             }
             for (int row = 1; row < n; row++)
             {
-                if (numbers[row]==numbers[row-1])
+                if (numbers[row] == numbers[row - 1])
                 {
                     count++;
                     maxCount = (count > maxCount) ? count : maxCount;

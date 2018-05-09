@@ -136,7 +136,10 @@
 >position is calculated in a simple way from a related but smaller and overlapping subproblem: the 
 >maximum subarray ending at the previous position) this algorithm can be viewed as a simple/trivial 
 >example of dynamic programming.
+
+**In short: Kadane`s algorithm can be described as: The maximal sum of a subset is either its last element or the sum of all preceding elements with the last element.**
 ### Maximal Sum като вариант:
+_If we write all possible combinations of numbers in an array, we`ll see that this solution is a typical example of Kadanes algorithm_ 
 ```C#
 	int[] array = { 2, 3, -6, -1, 2, -1, 6, 4, -8, 8 };
         int maxEndHere = array[0];
@@ -163,6 +166,25 @@
         {
             Console.Write(array[i] + " ");
 } 
+```
+### Maximal Sum като вариант:
+_Typical example of Kadanes algorithm_ 
+```C#
+	int n = int.Parse(Console.ReadLine());
+        int[] numbers = new int[n];
+        int sum = 0;
+        int maxSum = int.MinValue;
+        for (int i = 0; i < n; i++)
+        {
+            numbers[i] = int.Parse(Console.ReadLine());
+            sum += numbers[i];
+            if (numbers[i] > sum)
+            {
+                sum = numbers[i];
+            }
+            maxSum = (sum > maxSum ? sum : maxSum);
+        }
+        Console.WriteLine(maxSum);
 ```
 ### FindSumInArray като вариант:
 ```C#
@@ -269,26 +291,7 @@
             }
         }
 ```
-### Binary Search като вариант:
-```C#
-	int n = int.Parse(Console.ReadLine());
-        int[] numbers = new int[n];
-        int downLimit = 0;
-        int upLimit = n - 1;
-        int index = downLimit + upLimit;
-        for (int i = 0; i < n; i++)
-        {
-            numbers[i] = int.Parse(Console.ReadLine());
-        }
-        int x = int.Parse(Console.ReadLine());
-        while (numbers[index] != x)
-        {
-            upLimit = numbers[index] > x ? index : upLimit;
-            downLimit = numbers[index] < x ? index : downLimit;
-            index = (downLimit + upLimit)/2;
-        }
-        Console.WriteLine(index);
-```
+### Quick Sort simple explanation [link](https://www.youtube.com/watch?v=aQiWF4E8flQ&list=LLTo5TXdsIkS5XgD4lkvae-A&index=1&t=226s)
 ### Prime numbers (вариант с листи който е адски бавен):
 ```C#
 	using System.Collections.Generic;
@@ -436,6 +439,42 @@
             }
         }
 ```
+### Subset With Sum S(вариант с побитови операции, който работи до 64 бита):
+```C#
+	int s = int.Parse(Console.ReadLine());
+        string[] line = Console.ReadLine().Split(' ');
+        int[] numbers = new int[line.Length];
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            numbers[i] = int.Parse(line[i]);
+        }
+        bool sumFound = false;
+        for (long combination = 1; combination < Math.Pow(2, numbers.Length); combination++)
+        {
+            long sum = 0;
+            for (int index = 0; index < numbers.Length; index++)
+            {
+                long bit = (combination >> index) & 1;
+                sum += numbers[index] * bit;
+            }
+            if (sum == s)
+            {
+                sumFound = true;
+                break;
+            }
+        }
+        Console.WriteLine(sumFound ? "yes" : "no");
+```
+### Subset With Sum S(обяснения по метода на динамичното оптимиране тук [link](https://youtu.be/FAL4qqzeHIM?t=4425)):
+#### Условие  
+| |0|1|2|3|4|5|6|7|8|9|
+|-|-|-|-|-|-|-|-|-|-|-|
+|**1**|F|T|F|F|F|F|F|F|F|F|
+|**2**|F|T|T|T|F|F|F|F|F|F|
+|**6**|F|T|T|T|F|F|T|T|T|T| 
+ 
+Всички възможни суми на трите елемента {1, 2, 6} са индексите, на които имаме стойност **`True`** на последния ред от таблицата.
+
 ### Remove elements from array(най-кратко решение):
 ```C#
         int n = int.Parse(Console.ReadLine());
@@ -465,6 +504,52 @@
         }
         Console.WriteLine(n - maxCount);
 ```
+### Remove elements from array(използвайки динамично оптимиране, обяснено в лекцията [тук](https://www.youtube.com/watch?v=FAL4qqzeHIM&feature=youtu.be&t=1h13m40s)):
+#### Условие
+|i|0|1|2|3|4|5|6|7|8|
+|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|
+|**Sequence S~i~**|2|4|3|5|1|7|6|9|8|
+|**Length L~i~**|1|2|2|3|1|4|4|5|5|
+|**Predecessor P~i~**|-1|0|0|2|-1|3|3|6|6|
+```C#
+	string[] line = Console.ReadLine().Split(' ');
+        int[] numbers = new int[line.Length];
+        for (int i = 0; i < line.Length; i++)
+        {
+            numbers[i] = int.Parse(line[i]);
+        }
+        int[] length = new int[numbers.Length];
+        int[] predecessors = new int[numbers.Length];//Пази индексите на предходните елементи
+        int bestEnd = 0;
+        int maxLength = 0;
+        length[0] = 1;
+        predecessors[0] = -1;//Предшественика на първия елемент е извън масива
+        for (int rightIndex = 1; rightIndex < numbers.Length; rightIndex++)
+        {
+            length[rightIndex] = 1;//Стойности по подразбиране в случай, че не влезнем нито веднъж в if-а
+            predecessors[rightIndex] = -1;
+            for (int leftIndex = 0; leftIndex < rightIndex; leftIndex++)
+            {
+                if (numbers[leftIndex] <= numbers[rightIndex] &&
+                    length[leftIndex] + 1 >= length[rightIndex])
+                {
+                    length[rightIndex] = length[leftIndex] + 1;
+                    predecessors[rightIndex] = leftIndex;
+                }
+            }
+            if (length[rightIndex] > maxLength)
+            {
+                bestEnd = rightIndex;
+                maxLength = length[rightIndex];
+            }
+        }
+        int index = bestEnd;
+        while (index != -1)
+        {
+            Console.Write(numbers[index] + " ");//Изписваме елемента, който стои на този индекс
+            index = predecessors[index];//Новия индекс е елемента от масив predecessors, който стои на този индекс
+        }
+```
 ### Permutations (вариация на countdown):
 ```C#
 	int n = int.Parse(Console.ReadLine());
@@ -480,7 +565,8 @@
         int j = 0;
         Console.WriteLine(string.Join(" ", a));
         while (i < n)
-        {
+        {//При този вариант на метода на Heap когато имаме четен брой елементи (2,4...) разменяме първия с последния,
+        //втория с предпоследния и така докато стигнем средата
             p[i]--;
             j = 0;
             do//първия вариант е с j = i % 2 * p[i] вместо този цикъл
@@ -500,11 +586,24 @@
             Console.WriteLine(string.Join(" ", a));
         }
 ```
-**Теорията я четох от тук:**
+**Теория за Пермутации(Вариации) и Комбинации от тук:**
+[link](https://www.mathsisfun.com/combinatorics/combinations-permutations.html)   
+**Обяснение какво са Комбинациите от тук:**  [link](https://youtu.be/p8vIcmr_Pqo?list=LLTo5TXdsIkS5XgD4lkvae-A)  
+**Теорията за задачата от тук:**
 [link](http://permute.tchs.info/ScalablePermutations.html#chap03), 
 [link](http://www.quickperm.org/), 
 [link](http://mikejfromva.com/2016/10/15/heaps-algorithm/), 
-[link](https://stackoverflow.com/questions/31425531/heap-algorithm-for-permutations)
+[link](https://stackoverflow.com/questions/31425531/heap-algorithm-for-permutations)  
+**Алгоритъм:** [link](http://www.quickperm.org/01example.php)
+
+Обяснение:
+>Овновната идея на метода е следната:   
+Дръж n-тия елемент докато пренареждаш всички до n-1-вия, после смени n-тия елемент с един от другите и повтори. Ако разменяме четен брой елементи нечетен брой пъти, вземайки винаги първия елемент ни гарантира различна комбинация. Ако обаче разменяме нечетен брой елементи четен брой пъти винаги ще завършваме с елементи в противоположен ред. Следователно ако взимаме винаги първия някой елементи няма да бъдат взети затова трябва да взимаме i+1 всеки път.  
+Да обобщим:  
+1 когато сме в извадка с четна дължина(2,4 т.н.) разменяме последователно всички елементи с последния като започваме от най-близкия до него и вървим наляво, така накрая получаваме шифтнати надясно с 1 елементи.  
+2 когато сме в извадка с нечетна дължина (3,5 т.н.) винаги взимаме първия защото вътрешната пермутация на извадката с четна дължина ни гарантира че той ще бъде различен всеки път.  
+В задачата условието очевидно е написано наобратно, в смисъл че ако i e нечетно се изпълнява условието за четна дължина и обратно, това е така защото при четна дължина на елементите, индексите са нечетни (дължина 2, краен индекс 1, дължина 4, краен индекс 3), т. е. на мястото на четната дължина отговаря нечетен индекс.
+
 ### Permutations (вариация на counting):
 ```C#
 	int n = int.Parse(Console.ReadLine());
@@ -544,8 +643,47 @@
             }
         }
 ```
-**Теория за Пермутации(Вариации) и Комбинации от тук:**
-[link](https://www.mathsisfun.com/combinatorics/combinations-permutations.html)
+### Finding the previous Permutation
+>Теорията за намиране на Пермутации е тук [link](https://www.nayuki.io/page/next-lexicographical-permutation-algorithm) [link](https://leetcode.com/articles/next-permutation/)
+```C#
+	int n = int.Parse(Console.ReadLine());
+        string[] inputPermutation = Console.ReadLine().Split(' ');
+        int[] a = new int[inputPermutation.Length];
+        for (int k = 0; k < a.Length; k++)
+        {
+            a[k] = int.Parse(inputPermutation[k]);
+        }
+        int i = n - 1;//Намираме най-дългата ненамаляща подредица
+        while (i > 0 && a[i - 1] <= a[i])
+        {
+            i--;
+        }
+        if (i <= 0)
+        {
+            Console.WriteLine("This is the first permutation.");
+            return;
+        }
+        int j = n - 1;//Намираме най-десния елемент, по-малък от pivot-a(позиция i-1)
+        while (a[i - 1] <= a[j])//В случая суфикса все още е ненамаляваща редица
+        {
+            j--;
+        }
+        int swap = a[i - 1];
+        a[i - 1] = a[j];
+        a[j] = swap;
+        j = n - 1;
+        while (i < j)
+        {//Обръщаме реда на елементите в суфикса
+            swap = a[i];
+            a[i] = a[j];
+            a[j] = swap;
+            i++;
+            j--;
+        }
+        Console.WriteLine(String.Join(" ",a));
+```
+### Combinations of set
+_Алгоритъм за намиране на броя битове, които са единица в дадено число [here](https://prismoskills.appspot.com/lessons/Bitwise_Operators/Count_ones_in_an_integer.jsp)_
 ### Как да четем научна литература:
 >Let me give you some advice about reading papers. If you find some detail you don't understand, often you can keep 
 >reading and see if you can still understand what is going on. Sometimes there will be a typo in the paper that is 

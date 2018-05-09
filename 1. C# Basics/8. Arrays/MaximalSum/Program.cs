@@ -8,7 +8,7 @@ namespace MaximalSum
         {
             int n = int.Parse(Console.ReadLine());
             int sum = 0;
-            int maxSum = 0;
+            int maxSum = int.MinValue;
             int counter = 0;
             int[] numbers = new int[n];
             for (int i = 0; i < n; i++)

@@ -8,29 +8,27 @@ namespace SelectionSort
         {
             int n = int.Parse(Console.ReadLine());
             int[] forSorting = new int[n];
-            int index = 0;
             for (int i = 0; i < n; i++)
             {
                 forSorting[i] = int.Parse(Console.ReadLine());
             }
             for (int row = 0; row < n; row++)
             {
-                int minValue = forSorting[row];
                 for (int j = row + 1; j < n; j++)
                 {
-                    if (forSorting[j] < minValue)
+                    if (forSorting[j] < forSorting[row])
                     {
-                        minValue = forSorting[j];
-                        index = j;
+                        int minValue = forSorting[j];
+                        forSorting[j] = forSorting[row];
+                        forSorting[row] = minValue;
                     }
-                }
-                if (minValue!=forSorting[row])
-                {
-                    forSorting[index] = forSorting[row];
-                    forSorting[row] = minValue;
                 }
                 Console.WriteLine(forSorting[row]);
             }
+            //Алгоритъмът работи по следния начин:
+            //Намира най-малкия елемент в списъка като сравнява първият елемент с всички останали
+            //Разменя го с елемента на първа позиция
+            //Повтаря горните две стъпки за всеки следващ елемент
         }
     }
 }

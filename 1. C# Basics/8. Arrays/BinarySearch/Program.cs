@@ -10,7 +10,6 @@ class Sample
         int upLimit = n - 1;
         int answer = -1;
         int mid = 0;
-        int index = downLimit + upLimit;
         for (int i = 0; i < n; i++)
         {
             numbers[i] = int.Parse(Console.ReadLine());
