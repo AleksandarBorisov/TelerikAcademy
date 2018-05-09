@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Distance
+namespace Distancee
 {
     class Program
     {

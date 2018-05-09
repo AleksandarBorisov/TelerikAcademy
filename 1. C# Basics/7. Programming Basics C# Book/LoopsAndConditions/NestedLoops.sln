@@ -57,7 +57,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Increasing4Numbers", "Incre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateRectangles", "GenerateRectangles\GenerateRectangles.csproj", "{CC519C51-2FCA-40B3-952D-CB205E1494A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Distance", "Distance\Distance.csproj", "{E085603A-4EB0-49BB-B428-BE89AE7D363C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Distancee", "Distancee\Distancee.csproj", "{E085603A-4EB0-49BB-B428-BE89AE7D363C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeTiles", "ChangeTiles\ChangeTiles.csproj", "{1E73331B-F42E-4252-BB77-7708672FA8AF}"
 EndProject
