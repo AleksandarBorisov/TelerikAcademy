@@ -45,7 +45,7 @@ namespace SaddyCopper
                 BigInteger product = 1;
                 while (strNumber.Length > 0)
                 {
-                    strNumber = strNumber.Substring(0, strNumber.Length - 1);//премахваме най-крайната буква
+                    strNumber = strNumber.Substring(0, strNumber.Length - 1);//Премахваме най-крайната буква
                     //strNumber = strNumber.Remove(strNumber.Length - 1);
                     int sum = 0;
                     for (int i = 0; i < strNumber.Length; i += 2)

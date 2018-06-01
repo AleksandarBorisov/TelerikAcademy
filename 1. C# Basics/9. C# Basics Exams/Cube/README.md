@@ -34,11 +34,9 @@ You should print the cube on the console. Each row can contain only the followin
 
 ## Example
 
-_The number of visualized empty spaces is with aesthetic purpose_
-
 |Input example|Output example|Input example|Output example|
 |:-------------|:--------------|:--------------|:--------------|
-|5<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>|        : : : : :<br/>      : /// :  :<br/>    : /// : X :<br/>  : /// : XX :<br/>: : : : : XXX :<br/>:      : XX :<br/>:      : X :<br/>:      : :<br/>: : : : :<br/><br/><br/><br/><br/><br/><br/>|8<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>|              : : : : : : : :<br/>            : //////  : :<br/>          : //////  :  X :<br/>        : //////  : XX :<br/>      : //////  : XXX :<br/>     : //////  : XXXX :<br/>   : //////  : XXXXX :<br/>: : : : : : : : XXXXXX :<br/>:            : XXXXX :<br/> :            : XXXX :<br/>  :            : XXX :<br/>:            : XX :<br/>:            : X :<br/>:            : :<br/>: : : : : : : :|       
+|5<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>|`    :::::`<br/>`   :///::`<br/>`  :///:X:`<br/>` :///:XX:`<br/>`:::::XXX:`<br/>`:   :XX: `<br/>`:   :X:  `<br/>`:   ::   `<br/>`:::::    `<br/><br/><br/><br/><br/><br/><br/>|8<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>|`       ::::::::`<br/>`      ://////::`<br/>`     ://////:X:`<br/>`    ://////:XX:`<br/>`   ://////:XXX:`<br/>`  ://////:XXXX:`<br/>` ://////:XXXXX:`<br/>`::::::::XXXXXX:`<br/>`:      :XXXXX: `<br/>`:      :XXXX:  `<br/>`:      :XXX:   `<br/>`:      :XX:    `<br/>`:      :X:     `<br/>`:      ::      `<br/>`::::::::       `<br/>|       
 
 
 

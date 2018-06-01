@@ -8,26 +8,26 @@ namespace MalkoKote
         {
             int sizeOfKote = int.Parse(Console.ReadLine());
             char signOfKote = char.Parse(Console.ReadLine());
-            int spacesBetweenYears = sizeOfKote / 4 - 1;
+            int spacesBetweenEars = sizeOfKote / 4 - 1;
             //Draw ears
-            Console.WriteLine(" {0}{1}{0} ", signOfKote, new string(' ', spacesBetweenYears));
+            Console.WriteLine(" {0}{1}{0} ", signOfKote, new string(' ', spacesBetweenEars));
             //Draw head
-            for (int i = 0; i < spacesBetweenYears; i++)
+            for (int i = 0; i < spacesBetweenEars; i++)
             {
-                Console.WriteLine(" {0} ", new string(signOfKote, spacesBetweenYears + 2));
+                Console.WriteLine(" {0} ", new string(signOfKote, spacesBetweenEars + 2));
             }
             //Draw neck
-            for (int i = 0; i < spacesBetweenYears; i++)
+            for (int i = 0; i < spacesBetweenEars; i++)
             {
-                Console.WriteLine("  {0}  ", new string(signOfKote, spacesBetweenYears));
+                Console.WriteLine("  {0}  ", new string(signOfKote, spacesBetweenEars));
             }
             //Draw upperBody + upperTail
-            for (int i = 0; i <= spacesBetweenYears; i++)
+            for (int i = 0; i <= spacesBetweenEars; i++)
             {
-                Console.Write(" {0} ", new string(signOfKote, spacesBetweenYears + 2));
-                if (i == spacesBetweenYears)
+                Console.Write(" {0} ", new string(signOfKote, spacesBetweenEars + 2));
+                if (i == spacesBetweenEars)
                 {
-                    Console.WriteLine("  {0}", new string(signOfKote, spacesBetweenYears + 1));
+                    Console.WriteLine("  {0}", new string(signOfKote, spacesBetweenEars + 1));
                 }
                 else
                 {

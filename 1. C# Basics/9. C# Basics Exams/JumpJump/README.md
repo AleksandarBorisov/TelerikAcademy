@@ -48,10 +48,10 @@ As mentioned above, the instructions are a single string. The instructions can c
 ## Sample tests
 | Input         | Output                                   |
 |:--------------|:-----------------------------------------|
-| 44^632^283    | Jump, Jump, DJ Tomekk kommt at 6!        |
-| 8^1231111     | Jump, Jump, DJ Tomekk kommt at 1!        |
-| 2^1           | Jump, Jump, DJ Tomekk kommt at 1!        |
-| 4^^02734      | Too drunk to go on after 3!              |
-| 201           | Too drunk to go on after 1!              |
-| 4444444444451 | Fell off the dancefloor at 14!           |
-| 203           | Fell off the dancefloor at -1!           |
+| `44^632^283`    | Jump, Jump, DJ Tomekk kommt at 6!        |
+| `8^1231111`     | Jump, Jump, DJ Tomekk kommt at 1!        |
+| `2^1`           | Jump, Jump, DJ Tomekk kommt at 1!        |
+| `4^^02734`      | Too drunk to go on after 3!              |
+| `201`           | Too drunk to go on after 1!              |
+| `4444444444451` | Fell off the dancefloor at 14!           |
+| `203`           | Fell off the dancefloor at -1!           |

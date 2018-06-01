@@ -9,7 +9,7 @@ namespace Conductors
             int perforatingDevice = int.Parse(Console.ReadLine());
             int ticketsCount = int.Parse(Console.ReadLine());
             int bitCounter = 0;
-            int bitsOfPerforatingDevice = perforatingDevice;
+            //int bitsOfPerforatingDevice = perforatingDevice;
             for (int i = 0; i < ticketsCount; i++)
             {
                 //while (bitsOfPerforatingDevice != 0)
@@ -20,8 +20,9 @@ namespace Conductors
                 //bitsOfPerforatingDevice = perforatingDevice;
                 bitCounter = Convert.ToString(perforatingDevice, 2).Length;
                 int ticket = int.Parse(Console.ReadLine());
-                for (int j = 0; j < 32 - bitCounter; j++)
-                {//Може и с while цикъл като условието ще бъде while((perforatingDevice & (1 << 31)) == 0)
+                for (int j = 0; j <= 32 - bitCounter; j++)
+                {//Може и с while цикъл като условието ще бъде while((perforatingDevice & (1 << 31)) == 0), но
+                    //проблемът е, че неможем да вземем бита на 31 позиция
                     int perforator = (perforatingDevice << j);
                     if ((ticket & perforator) == perforator)
                     {
@@ -30,7 +31,6 @@ namespace Conductors
                 }
                 Console.WriteLine(ticket);
             }
-           
         }
     }
 }

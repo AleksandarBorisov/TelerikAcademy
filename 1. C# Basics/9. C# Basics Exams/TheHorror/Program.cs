@@ -17,7 +17,7 @@ namespace TheHorror
                     count++;
                 }
             }
-            Console.WriteLine("{0} {1}",count,sum);
+            Console.WriteLine("{0} {1}", count, sum);
         }
     }
 }

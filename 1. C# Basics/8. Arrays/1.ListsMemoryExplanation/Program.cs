@@ -6,7 +6,7 @@ namespace _1.ListsMemoryExplanation
     class Program
     {
         static void Main()
-        {
+        {//Задача от урока за масиви
             var array = new int[0];
             int count = 0;
             Console.WriteLine("Fast Add");

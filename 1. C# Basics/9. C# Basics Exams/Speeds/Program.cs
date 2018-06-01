@@ -11,28 +11,28 @@ namespace Speeds
             int groupSpeed = int.MaxValue;
             int maxSumSpeed = 0;
             int maxGroup = 0;
-            int maxSpeed = 0;
+            int sumSpeed = 0;
             for (int i = 0; i < cars; i++)
             {
                 int speed = int.Parse(Console.ReadLine());
                 if (speed <= groupSpeed)
-                {
+                {//Правим нова група
                     groupSpeed = speed;
+                    sumSpeed = speed;
                     group = 1;
-                    maxSumSpeed = speed;
                 }
                 else
-                {
+                {//Добавяме към съществуваща
                     group++;
-                    maxSumSpeed += speed;
+                    sumSpeed += speed;
                 }
-                if (group > maxGroup || (group == maxGroup && maxSumSpeed > maxSpeed))
-                {
+                if (group > maxGroup || (group == maxGroup && sumSpeed > maxSumSpeed))
+                {//Меродавна ни е най-дългата група или тази с най-голяма сумарна скорост
                     maxGroup = group;
-                    maxSpeed = maxSumSpeed;
+                    maxSumSpeed = sumSpeed;
                 }
             }
-            Console.WriteLine(maxSpeed);
+            Console.WriteLine(maxSumSpeed);
         }
     }
 }

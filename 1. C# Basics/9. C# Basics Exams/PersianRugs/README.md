@@ -37,9 +37,7 @@ You should print the Persian rug on the console. Each row can contain only the f
 
 ## Example
 
-_The number of visualized empty spaces is with aesthetic purpose_
-
 |Input example|Output example|Input example|Output example|Input example|Output example|
 |:-------------|:--------------|:-------------|:--------------|:-------------|:-------------|
-|5<br/>2<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>|\\      \\ . . . /      /<br/>#\\      \\ . /      /#<br/>##\\             /##<br/>###\\        /###<br/>####\\    /####<br/>#####X#####<br/>####/    \\####<br/>###/        \\###<br/>##/             \\##<br/>#/      / . \\      \\#<br/>/      / . . . \\      \\<br/><br/><br/>|3<br/>0<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>|\\ \\ . . . / /<br/>#\\ \\ . / /#<br/>##\\   /##<br/>###X###<br/>##/   \\##<br/>#/ / . \\ \\#<br/>/ / . . . \\ \\<br/><br/><br/><br/><br/><br/><br/>|6<br/>10<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>|\                        /<br/>#\                    /#<br/>##\                /##<br/>###\            /###<br/>####\        /####<br/>#####\\    /#####<br/>######X######<br/>#####/    \\#####<br/>####/        \\####<br/>###/            \\###<br/>##/                \\##<br/>#/                    \\#<br/>/                        \\|
+|5<br/>2<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>|`\  \.../  /`<br/>`#\  \./  /#`<br/>`##\     /##`<br/>`###\   /###`<br/>`####\ /####`<br/>`#####X#####`<br/>`####/ \####`<br/>`###/   \###`<br/>`##/     \##`<br/>`#/  /.\  \#`<br/>`/  /...\  \`<br/><br/><br/>|3<br/>0<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>|`\\...//`<br/>`#\\.//#`<br/>`##\ /##`<br/>`###X###`<br/>`##/ \##`<br/>`#//.\\#`<br/>`//...\\`<br/><br/><br/><br/><br/><br/><br/>|6<br/>10<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>|`\           /`<br/>`#\         /#`<br/>`##\       /##`<br/>`###\     /###`<br/>`####\   /####`<br/>`#####\ /#####`<br/>`######X######`<br/>`#####/ \#####`<br/>`####/   \####`<br/>`###/     \###`<br/>`##/       \##`<br/>`#/         \#`<br/>`/           \`|
 

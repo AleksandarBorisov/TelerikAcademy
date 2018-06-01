@@ -15,9 +15,9 @@ namespace FindBits
             for (int i = 0; i < n; i++)
             {
                 int currentNumber = int.Parse(Console.ReadLine());
-                int position = (29 - 5);
-                while (position >= 0)//по условие трябва да сравняваме само до 29-ия бит
-                {//преместване с 24 места, демек вземаме битовете на позиции 25,26,27,28,29
+                int position = 24;
+                while (position >= 0)//По условие трябва да сравняваме само до 28-ия бит, затова преместваме с 24 места
+                {//(махаме позиции 0 + (1 - 23)), при което на първите места идват битовете от позиции 24,25,26,27,28
                     int bitsForChecking = (((mask << position) & currentNumber) >> position);
                     if (fiveBits == bitsForChecking)
                     {

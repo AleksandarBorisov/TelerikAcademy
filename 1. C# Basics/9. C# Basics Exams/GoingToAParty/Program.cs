@@ -8,12 +8,12 @@ namespace GoingToAParty
         {
             string directions = Console.ReadLine();
             int position = 0;
-            string message = "Djor and Django are lost at {0}!";
+            string message = "Djor and Djano are lost at {0}!";
             while (position >= 0 && position < directions.Length)
             {
                 if (directions[position] == '^')
                 {
-                    message = "Djor and Django are at the party at {0}!";
+                    message = "Djor and Djano are at the party at {0}!";
                     break;
                 }
                 else if ('a' <= directions[position] && directions[position] <= 'z')

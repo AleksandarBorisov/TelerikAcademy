@@ -68,7 +68,7 @@ namespace Cube
             //            Console.Write(side);
             //        }
             //        else if (row < middle &&
-            //            row + col > middle)//Нямаме нужда от проверката за третия диагонал row + col < fieldSize - 1 && (row < middle))
+            //            row + col > middle)//Нямаме нужда от проверката за третия диагонал row + col < fieldSize - 1 && (row < middle)),
             //        //защото ако горния if е изпълнен въобще няма да влезнем в този else
             //        {//Top
             //            Console.Write(top);

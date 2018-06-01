@@ -12,7 +12,7 @@ namespace MythicalNumbers
             //int c = number[2] - '0';
 
             int number = int.Parse(Console.ReadLine());
-            int a = (number / 100) % 10;//%10 се налага в случаи, в които имаме число с повече от 3 цифри
+            int a = (number / 100) % 10;//% 10 се налага в случаи, в които имаме число с повече от 3 цифри
             int b = (number / 10) % 10;
             int c = (number / 1) % 10;
             double product = 0;
@@ -28,7 +28,7 @@ namespace MythicalNumbers
             {
                 product = (a + b) * c;
             }
-            Console.WriteLine("{0:F2}",product);
+            Console.WriteLine("{0:F2}", product);
         }
     }
 }

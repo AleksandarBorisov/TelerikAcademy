@@ -10,6 +10,7 @@ namespace ConsoleApplication1
             string numberAsString = Console.ReadLine();
             int position = 0;
             BigInteger bestProduct = 1;
+            BigInteger productOfTen = 1;
             while (numberAsString != "END")
             {
                 long number = long.Parse(numberAsString);
@@ -27,12 +28,16 @@ namespace ConsoleApplication1
                 if (position == 10)
                 {
                     //position = 0;//Продължаваме да броим откъдето сме стигнали, не започваме отново
-                    Console.WriteLine(bestProduct);
+                    productOfTen = bestProduct;
                     bestProduct = 1;
                 }
                 numberAsString = Console.ReadLine();
             }
-            if (position != 10)//(position > 0)
+            if (position >= 10)
+            {
+                Console.WriteLine(productOfTen);
+            }
+            if (position != 10)
             {
                 Console.WriteLine(bestProduct);
             }

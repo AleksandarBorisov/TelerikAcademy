@@ -32,7 +32,7 @@ namespace SecretsOfNumbers
                 for (int i = 0; i < lengthOfAlpha; i++)
                 {
                     int remainder = specialSum % 26;
-                    int symbolCode = (remainder + i) % 26 + 'A';//%26 е за да започнем отначало ако стигнем Z
+                    int symbolCode = (remainder + i) % 26 + 'A';//% 26 е за да започнем отначало ако стигнем Z
                     char symbol = (char)symbolCode;
                     Console.Write(symbol);
                 }
@@ -40,10 +40,8 @@ namespace SecretsOfNumbers
             else
             {
                 Console.Write("{0} has no alpha-sequence", number);
-
             }
             Console.WriteLine();
-
         }
     }
 }

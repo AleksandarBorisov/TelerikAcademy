@@ -60,7 +60,7 @@ namespace X_expression
                 }
                 symbol = Console.Read();
             }
-            Console.WriteLine("{0:F2}",outerValue);
+            Console.WriteLine("{0:F2}", outerValue);
         }
     }
 }

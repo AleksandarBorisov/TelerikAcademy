@@ -12,14 +12,14 @@ namespace PersianRugs
             char sides = '#';
             char whiteSpace = ' ';
             for (int row = 0; row < n; row++)
-            {
-                int spacesLeft = width - row - row - 1 - 1- xSize - xSize;
+            {//row ще ни е брояч за #
+                int spacesLeft = width - row - row - 1 - 1 - xSize - xSize;
                 if (spacesLeft >= 3)//Проверяваме в самия for цикъл дали оставащото място е достатъчно
-                {// да събере малкия триъгълник
+                {//да събере малкия триъгълник
                     Console.WriteLine("{0}\\{1}\\{2}/{1}/{0}",
                     new string(sides, row),
                     new string(whiteSpace, xSize),
-                    new string('.',spacesLeft-2));
+                    new string('.', spacesLeft - 2));
                 }
                 else
                 {
@@ -30,11 +30,11 @@ namespace PersianRugs
             }
             Console.WriteLine("{0}X{0}",
                 new string(sides, n));
-            for (int row = n-1; row >= 0; row--)
+            for (int row = n - 1; row >= 0; row--)
             {
                 int spacesLeft = width - row - row - 1 - 1 - xSize - xSize;
                 if (spacesLeft >= 3)//Проверяваме в самия for цикъл дали оставащото място е достатъчно
-                {// да събере малкия триъгълник
+                {//да събере малкия триъгълник
                     Console.WriteLine("{0}/{1}/{2}\\{1}\\{0}",
                     new string(sides, row),
                     new string(whiteSpace, xSize),

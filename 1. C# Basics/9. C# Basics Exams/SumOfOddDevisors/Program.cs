@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SumOfEvenDevisors
+namespace SumOfOddDevisors
 {
     class Program
     {
@@ -8,18 +8,18 @@ namespace SumOfEvenDevisors
         {
             int A = int.Parse(Console.ReadLine());
             int B = int.Parse(Console.ReadLine());
-            int sumOfEvenDevisors = 0;
+            int sumOfOddDevisors = 0;
             for (int i = A; i <= B; i++)
             {
                 for (int j = 1; j <= i; j += 2)
                 {
                     if (i % j == 0)
                     {
-                        sumOfEvenDevisors += j;
+                        sumOfOddDevisors += j;
                     }
                 }
             }
-            Console.WriteLine(sumOfEvenDevisors);
+            Console.WriteLine(sumOfOddDevisors);
         }
     }
 }

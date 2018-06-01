@@ -21,7 +21,7 @@ Sometimes **Tzacky** wants to be extra sure his message will be secret, so he de
   - example 1: for **S = -2** and **E = -1**
     - line of code: "some random text that makes no sen**ce**"
   - example 2: for **S = -6** and **E = -2**
-    - line of code: "some random text that makes no**_senc**e" (from the white space)
+    - line of code: "some random text that makes no **senc**e" (from the white space)
 
 ## Input
 - On the first line you can read the index of the first symbol **S**, if instead of a number you read **end** your program should print the secret message so far and stop.
@@ -51,8 +51,8 @@ Sometimes **Tzacky** wants to be extra sure his message will be secret, so he de
 Explanation:<br/>
 А traveller might **c**ho**o**se a route basedek mythology, chaos,<br/>
 on a given **d**est**i**ny **n**ot **g**ettinging to Hesiod, was the first thing to exist.<br/>
-into**_**wh**i**ch one is the best.<br/>
-Choice**s** as**_**pro**f**essions are made<br/>
+into wh**i**ch one is the best.<br/>
+Choice**s** as pro**f**essions are made<br/>
 much more diffic**u**lt.<br/>
 With them you might **n**eed to do some research beforehand.<br/>
 

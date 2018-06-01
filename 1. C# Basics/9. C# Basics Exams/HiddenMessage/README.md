@@ -22,7 +22,7 @@ Sometimes **Tzacky** wants to be extra sure his message will be hidden, so he de
   - example 1: for **I = -1**
     - line of code: "some random text that makes no senc**e**"
   - example 2: for **I = -6**
-    - line of code: "some random text that makes no**_**sence" (the space)
+    - line of code: "some random text that makes no sence" (the space)
 
 ## Input
 - On the first line you can read the index of the first symbol `i`, if instead of a number you read `end` your program should print the hidden message so far and stop.
@@ -51,8 +51,8 @@ Sometimes **Tzacky** wants to be extra sure his message will be hidden, so he de
 Explanation:<br/>
 To molten steel you can add **c**arb**o**n a**d**dit**i**ve.<br/>
 Carbon additive includes calcined petroleum coke, graphite petroleum coke,<br/>
-**n**atural **g**raphite**_**etc.<br/>
-For the steel-making **i**ndu**s**try**_**the<br/>
+**n**atural **g**raphite etc. ("ng ")<br/>
+For the steel-making **i**ndu**s**try the ("is ")<br/>
 sul**f**ur in calcined petroleum coke<br/>
 is a cr**u**cial eleme**n**t<br/>
 

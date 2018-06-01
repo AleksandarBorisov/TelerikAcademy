@@ -43,8 +43,8 @@ The directions are a string on a single line. This string can contain letters fr
 ## Sample tests
 | Input       | Output                                |
 |:------------|:--------------------------------------|
-| abcAk^zzz^  | Djor and Djano are at the party at 5! |
-| abcAkzzzz^  | Djor and Djano are lost at 31!        |
-| baK^I^      | Djor and Djano are lost at -9!        |
-| fVz^A^Bz^kA | Djor and Djano are at the party at 3! |
-| ak^         | Djor and Djano are lost at 12!        |
+| `abcAk^zzz^`  | Djor and Djano are at the party at 5! |
+| `abcAkzzzz^`  | Djor and Djano are lost at 31!        |
+| `baK^I^`      | Djor and Djano are lost at -9!        |
+| `fVz^A^Bz^kA` | Djor and Djano are at the party at 3! |
+| `ak^`         | Djor and Djano are lost at 12!        |

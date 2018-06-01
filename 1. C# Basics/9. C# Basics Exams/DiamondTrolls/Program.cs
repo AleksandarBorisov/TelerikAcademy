@@ -32,7 +32,7 @@ namespace DiamondTrolls
                      new string(font, (width - 3 - 2 * i) / 2));
             }
             Console.WriteLine("{0}*{0}",
-                new string(font,n));
+                new string(font, n));
         }
     }
 }

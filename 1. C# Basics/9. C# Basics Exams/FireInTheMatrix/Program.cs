@@ -8,14 +8,14 @@ namespace FireInTheMatrix
         {
             int n = int.Parse(Console.ReadLine());
             //Top flame
-            for (int row = 0; row <= n - 2; row += 2)//Ориентър ни е броя на точките в центъра
+            for (int row = 0; row <= n - 2; row += 2)//Ориентир ни е броя на точките в центъра
             {
                 Console.WriteLine("{0}#{1}#{0}",
                     new string('.', (n - 2 - row) / 2),
                     new string('.', row));
             }
             //Bottom flame
-            for (int row = 0; row < n / 4; row++)//Ориентир са ни броя редова от долната част
+            for (int row = 0; row < n / 4; row++)//Ориентир са ни броя редове от долната част
             {
                 Console.WriteLine("{0}#{1}#{0}",
                     new string('.', row),

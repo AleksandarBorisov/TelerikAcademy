@@ -6,7 +6,7 @@ namespace Stools
     {
         static void Main()
         {//Като науча рекурсия да се върна на тази задача
-            //Написах я, но алгоритъма е бавен и прави грешки
+            //Написах я, но алгоритъма е бавен
             int stoolsCount = int.Parse(Console.ReadLine());
             int[,] stools = new int[3, stoolsCount];
             for (int i = 0; i < stoolsCount; i++)
@@ -39,6 +39,7 @@ namespace Stools
                 for (int left = 0; left < stoolsCount; left++)
                 {//Използваме SelectionSort, за да наредим табуретките по големината на размерите им във възходящ ред
                     //Като ориентир са ни и двата размера(от тук предполагам че идва и грешката)
+                    //Затова трябва да сортирам първо за единия, после за другия, но отнема много време
                     for (int right = left + 1; right < stoolsCount; right++)
                     {
                         if (areaDimensions[1, right] < areaDimensions[1, left] && areaDimensions[2, right] < areaDimensions[2, left])

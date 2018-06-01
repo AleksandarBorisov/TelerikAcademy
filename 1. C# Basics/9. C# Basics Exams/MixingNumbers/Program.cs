@@ -25,12 +25,11 @@ namespace MixingNumbers
             int previousNumber = int.Parse(Console.ReadLine());
             string mixNumber = "";
             string subNumber = "";
-            for (int i = 0; i < n-1; i++)
+            for (int i = 0; i < n - 1; i++)
             {
                 int nextNumber = int.Parse(Console.ReadLine());
                 mixNumber += string.Format("{0} ", (previousNumber % 10) * ((nextNumber / 10) % 10));
                 subNumber += string.Format("{0} ", Math.Abs(previousNumber - nextNumber));
-
                 previousNumber = nextNumber;
             }
             Console.WriteLine(mixNumber);

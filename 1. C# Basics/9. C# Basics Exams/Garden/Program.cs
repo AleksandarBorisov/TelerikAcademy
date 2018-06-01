@@ -35,7 +35,7 @@ namespace Garden
             {
                 Console.WriteLine("Beans area: {0}", totalArea);
             }
-            else if(totalArea==0)
+            else if (totalArea == 0)
             {
                 Console.WriteLine("No area for beans");
             }

@@ -34,7 +34,6 @@ namespace _3_6_9
                 }
                 Console.WriteLine(result);
             }
-            
         }
     }
 }

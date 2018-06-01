@@ -1,4 +1,4 @@
-﻿<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/logos/telerik-header-logo.png" />
+﻿s<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/logos/telerik-header-logo.png" />
 
 #### _Telerik Academy Season 2015-2016 / C# Fundamentals Exam - 2 February 2015 Morning_
 

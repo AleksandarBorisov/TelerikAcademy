@@ -8,29 +8,31 @@ namespace ConsoleApplication2
         static void Main()
         {
             BigInteger evenProduct = 1;
-            int counter = -1;
+            BigInteger productOfTen = 1;
+            int counter = 0;
             string numberAsString = Console.ReadLine();
             while (numberAsString != "END")
             {
-                BigInteger number = BigInteger.Parse(numberAsString);
-                counter++;
-                if (counter == 9)
+                long number = long.Parse(numberAsString);
+                if (counter == 10)
                 {
-                    Console.WriteLine(evenProduct);
+                    productOfTen = evenProduct;
                     evenProduct = 1;
-                    counter = 1;
                 }
-                else if (counter % 2 == 0)
+                if (counter % 2 == 0)
                 {
-                    BigInteger even = number;
-                    while (even != 0)
+                    while (number != 0)
                     {
-                        BigInteger digit = (even % 10) != 0 ? (even % 10) : 1;//Ако цифрата е 0 взимаме 1
-                        evenProduct *= digit;
-                        even /= 10;
+                        evenProduct *= (number % 10) != 0 ? (number % 10) : 1;//Ако цифрата е 0 взимаме 1
+                        number /= 10;
                     }
                 }
+                counter++;
                 numberAsString = Console.ReadLine();
+            }
+            if (counter > 10)
+            {
+                Console.WriteLine(productOfTen);
             }
             Console.WriteLine(evenProduct);
         }

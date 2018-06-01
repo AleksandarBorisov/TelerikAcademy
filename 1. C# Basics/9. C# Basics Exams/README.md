@@ -1,5 +1,22 @@
 ﻿## During my preparation i solved the following Exam problems:
-_Checked task means that it is run in BGCoder_
+_Checked task means that it is run in the judge-system_
+### C# Fundamentals 2011/2012 Part 1 - Sample Exam
+- [x] Cartesian Coordinate System
+- [x] Miss Cat 2011
+- [x] Forest Road
+- [ ] Binary Digits Count
+- [x] Subset Sums
+### C# Fundamentals 2011/2012 Part 1 - Test Exam
+- [x] Math Expression
+- [x] Least Majority Multiple
+- [x] Trapezoid
+- [x] Odd Number
+- [x] Fall Down
+### Telerik Academy Exam 1 @ 6 Dec 2011 Morning
+- [x] Ship Damage
+- [x] Tribonacci
+### Telerik Academy Exam 1 @ 27 Dec 2012
+- [x] Tribonacci Triangle
 ### Exam from 23 June 2013:
 - [ ] Coffee Vending Machine
 - [ ] Drunken Numbers
@@ -22,11 +39,11 @@ _Checked task means that it is run in BGCoder_
 - [ ] X Expression
 - [ ] Diamond Trolls
 ### Exam from 12 April 2014 Evening:
-- [ ] Exam Schedule
-- [ ] Odd Even Elements
-- [ ] Arrow
-- [ ] Five Special Letters
-- [ ] Bit Roller
+- [x] Exam Schedule
+- [x] Odd Even Elements
+- [x] Arrow
+- [x] Five Special Letters
+- [x] Bit Roller
 ### Exam from 2 February 2015 Morning:
 - [x] Printing
 - [x] Text to Number
@@ -75,3 +92,37 @@ _Checked task means that it is run in BGCoder_
 - [x] Jump, Jump
 - [x] Hidden Message
 - [x] Mixing Numbers
+### Telerik Academy Alpha - JS Mock Exam 9 Sep 2017
+- [x] Counting
+- [x] Pyramids
+- [ ] Coki's Products
+### Telerik Academy Alpha - C# Mock Exam 10 Sep 2017
+- [x] Numbers
+- [ ] Merging and Squashing
+### Telerik Academy Alpha - C# Mock Exam 30 Sep 2017
+- [x] Balanced numbers
+- [x] Legs
+- [x] Signal from space
+### Telerik Academy Alpha - C# Entrance Exam 11 Oct 2017
+- [x] Crooked Digits
+- [ ] Crooked Stairs
+- [ ] Crooked Walls
+### Telerik Academy Alpha - C# Entrance Exam 13 Oct 2017
+- [x] Guess The Date
+- [x] Prime Triangle 
+- [x] Hops
+### Telerik Academy Alpha - Entry Exam
+- [x] Maze Runner
+- [x] Paper cutter
+- [ ] Spell caster
+### Java Mock Exam 15 February 2018
+- [ ] Game
+- [x] Horse Path
+### Telerik Academy Alpha - C# Mock Exam 1 9 May 2018
+- [x] Crooked Digits
+- [x] Prime Triangle
+- [x] Balanced numbers
+### Telerik Academy Alpha - C# Mock Exam 2 9 May 2018
+- [x] Game
+- [x] Speeds
+- [x] Horse Path
