@@ -15,10 +15,17 @@ namespace MaximalSumHomework
                 string[] line = Console.ReadLine().Split(' ');
                 for (int col = 0; col < m; col++)
                 {
-                    matrix[row, col] = int.Parse(line[col]);
+                    bool negative = (line[col][0] == '-');
+                    for (int index = 0; index < line[col].Length; index++)
+                    {
+                        if (line[col][index] != '-')
+                        {
+                            matrix[row, col] = matrix[row, col] * 10 + (line[col][index] - '0');
+                        }
+                    }
+                    matrix[row, col] = negative ? -matrix[row, col] : matrix[row, col];
                 }
             }
-
             int maxSum = int.MinValue;
             //int bestRow = 0;//Закоментирания вариант а за извеждане на цялата площадка,
             //int bestCol = 0;//а не само максималната сума

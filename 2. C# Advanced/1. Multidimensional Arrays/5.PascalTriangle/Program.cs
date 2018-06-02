@@ -8,7 +8,7 @@ namespace _5.PascalTriangle
         {
             int height = 12;
             int[][] triangle = new int[height][];//Дефинираме назъбен масив
-            for (int row = 0; row < triangle.Length; row++)//еквивалентно на col < height
+            for (int row = 0; row < triangle.Length; row++)//еквивалентно на row < height
             {
                 triangle[row] = new int[row + 1];//Дефинираме всеки ред от назъбения масив
             }
@@ -21,7 +21,6 @@ namespace _5.PascalTriangle
                     triangle[row + 1][col + 1] += triangle[row][col];
                 }
             }
-
             for (int row = 0; row < triangle.Length; row++)
             {
                 Console.Write("".PadLeft((height - row) * 2));

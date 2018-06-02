@@ -85,7 +85,7 @@ namespace FillTheMatrix
                     }
                     row++;//За да се върнем в масива
                     col--;//За да хванем следващия елемент, а не да повтаряме на същата позиция
-                    while (col > 0 && array[row, col] == 0)//Втора хоризонтала надясно
+                    while (col > 0 && array[row, col] == 0)//Втора хоризонтала наляво
                     {
                         array[row, col--] = counter;//Вървим наляво
                         counter++;

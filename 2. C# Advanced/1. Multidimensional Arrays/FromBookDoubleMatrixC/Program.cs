@@ -46,7 +46,6 @@ namespace FromBookDoubleMatrixC
                 }
                 else
                 {
-                    row = 0;
                     array[row, ++col] = i++;
                 }
                 int rightIndex = col;
