@@ -6,16 +6,16 @@ namespace DecimalToBinary
     {
         static void Main()
         {
-            ulong n = ulong.Parse(Console.ReadLine());
+            long n = long.Parse(Console.ReadLine());
             string binary = "";
             do
             {
-                int digit = (int) (n % 2);
+                int digit = (int)(n % 2);
                 binary = digit + binary;
                 n /= 2;
-            } while (n!= 0);
+            } while (n != 0);
             Console.WriteLine(binary);
-            Main();
+            //Main();
         }
     }
 }

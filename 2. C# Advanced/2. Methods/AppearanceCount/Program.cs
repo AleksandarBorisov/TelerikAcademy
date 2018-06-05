@@ -7,16 +7,16 @@ namespace AppearanceCount
         {
             int n = int.Parse(Console.ReadLine());
             string[] numbers = Console.ReadLine().Split(' ');
-            int search = int.Parse(Console.ReadLine());
+            string search = Console.ReadLine();
             Console.WriteLine(SearchMatrix(numbers, search));
         }
 
-        static int SearchMatrix(string[] numbers, int searchedNumber)
+        static int SearchMatrix(string[] numbers, string searchedNumber)
         {
             int count = 0;
-            for (int i = 0; i < numbers.Length; i++)
+            foreach (string number in numbers)
             {
-                if (int.Parse(numbers[i]) == searchedNumber)
+                if (number == searchedNumber)
                 {
                     count++;
                 }

@@ -41,6 +41,5 @@ namespace FromBookMonths
             //Console.WriteLine(today);
             //Main();
         }
-
     }
 }

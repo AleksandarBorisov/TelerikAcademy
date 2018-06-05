@@ -7,13 +7,13 @@ namespace BinaryToDecimal
         static void Main()
         {
             string binary = Console.ReadLine();
-            ulong result = 0;
+            long result = 0;
             foreach (char digit in binary)
             {
-                result = result * 2 + (ulong)(digit - '0');
+                result = result * 2 + (digit - '0');
             }
             Console.WriteLine(result);
-            Main();
+            //Main();
         }
     }
 }

@@ -95,6 +95,7 @@ namespace _2.Matrix
 
             return product;
         }
+
         static void Main()
         {
             //Методи с числа

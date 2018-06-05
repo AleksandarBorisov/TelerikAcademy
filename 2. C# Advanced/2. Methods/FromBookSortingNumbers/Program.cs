@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FromLessonSortingNumbers
+namespace FromBookSortingNumbers
 {
     class Program
     {

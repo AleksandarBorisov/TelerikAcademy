@@ -7,7 +7,7 @@ namespace BinaryShort
         static void Main()
         {
             short number = short.Parse(Console.ReadLine());
-            Console.WriteLine(Convert.ToString(number,2));//За сверяване
+            Console.WriteLine(Convert.ToString(number, 2));//За сверяване
 
             string binary = "";
             if (number < 0)
@@ -35,7 +35,7 @@ namespace BinaryShort
                 binary = (1 - digit) + binary;
             } while (number != 0);//Принципа е същия като долу, само че добавяме противоположната цифра всеки път и накрая
             return binary.PadLeft(16, '1');//допълваме с единици
-        }//Увеличаването на стойността на отрицателно число е равносилно на броене отзад напред на положително число
+        }//Увеличаването на стойността на отрицателно число е равносилно на обратно броене с положителни числа
 
         static string ConvertPositiveNumber(short number)
         {
@@ -46,7 +46,7 @@ namespace BinaryShort
                 number /= 2;
                 binary = digit + binary;
             } while (number != 0);
-            return binary.PadLeft(16, '0');//binary;
+            return binary.PadLeft(16, '0');//binary;//Пишем това ако разкоментираме горе
         }
     }
 }

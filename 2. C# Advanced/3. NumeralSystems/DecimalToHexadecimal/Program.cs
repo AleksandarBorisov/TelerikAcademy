@@ -6,7 +6,7 @@ namespace DecimalToHexadecimal
     {
         static void Main()
         {
-            ulong n = ulong.Parse(Console.ReadLine());
+            long n = long.Parse(Console.ReadLine());
             string result = "";
             string digits = "0123456789ABCDEF";
             do

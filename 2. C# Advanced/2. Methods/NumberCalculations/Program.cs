@@ -19,9 +19,9 @@ namespace NumberCalculations
             Console.WriteLine(Sum(a, b, c, d, e));
             Console.WriteLine(Product(a, b, c, d, e));
         }
-        //<T> е дефиниран тип с поиволно име, и означава че метода е generic, т.е. този тип може да бъде всеки възможен в C#
+        //<T> е дефиниран тип с произволно име, и означава че метода е generic, т.е. този тип може да бъде всеки възможен в C#
         static T Minimum<T>(params T[] numbers) where T : IComparable<T>//where е constraint и ни позволява 
-        {//да извършваме определени опреции с параметъра от тип T
+        {//да извършваме определени операции с параметъра от тип T
             //Constraints ни позволяват да правим overload на оператори
             T min = numbers[0];
             for (int i = 1; i < numbers.Length; i++)

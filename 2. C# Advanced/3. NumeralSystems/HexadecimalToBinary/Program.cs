@@ -6,30 +6,29 @@ namespace HexadecimalToBinary
     {
         static void Main()
         {
-            string hex = Console.ReadLine();
-            string binary = "";
-            foreach (char symbol in hex)
+            string[] binDigits =
+                { "0000","0001", "0010", "0011", "0100", "0101",
+                "0110","0111", "1000", "1001", "1010",
+                "1011", "1100","1101","1110","1111", };
+            string input = Console.ReadLine();
+            string[] result = new string[input.Length];//Писането в масив от стрингове се оказа доста по-бързо от писането
+            int index = 0;//на един стринг, важно е запомни го!
+            while (index < input.Length)
             {
-                int digitValue = 0;
-                if (char.IsDigit(symbol))
+                switch (input[index])
                 {
-                    digitValue = symbol - '0';
+                    case 'A': result[index] = binDigits[10]; ; break;
+                    case 'B': result[index] = binDigits[11]; ; break;
+                    case 'C': result[index] = binDigits[12]; ; break;
+                    case 'D': result[index] = binDigits[13]; ; break;
+                    case 'E': result[index] = binDigits[14]; ; break;
+                    case 'F': result[index] = binDigits[15]; ; break;
+                    default: result[index] = binDigits[input[index] - '0']; ; break;
                 }
-                else
-                {
-                    digitValue = symbol - 'A' + 10;
-                }
-                string currentBinary = "";
-                do
-                {
-                    int remainder = digitValue % 2;//Десетината стойност на цифрата делим на 2 с остатък
-                    digitValue /= 2;
-                    currentBinary = remainder + currentBinary;
-                } while (digitValue != 0);
-                binary += currentBinary.ToString().PadLeft(4, '0');
+                index++;
             }
-            Console.WriteLine(binary.TrimStart('0'));
-            Main();
+            Console.WriteLine(string.Join("", result).TrimStart('0'));
+            //Main();
         }
     }
 }

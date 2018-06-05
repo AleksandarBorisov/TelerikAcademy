@@ -3,7 +3,7 @@
 namespace NumberAsArray
 {
     class Program
-    {
+    {//В judge задачата се казва Big Numbers
         static void Main()
         {
             string sizes = Console.ReadLine();

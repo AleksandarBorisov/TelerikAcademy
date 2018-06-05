@@ -41,7 +41,7 @@ namespace CokisProducts
                             count = count * 10 + (symbol - '0');
                         }
                         else
-                        {//Ако прочетения символ е цифра, записваме стойността му в product
+                        {//Ако прочетения символ е буква, записваме стойността му в product
                             product += symbol;
                         }
                         symbol = (char)Console.Read();

@@ -28,8 +28,8 @@ namespace FromBookRomanNumerals
                     previousValue = valueIndecimal;
                 }
                 else
-                {//Ако обаче се окаже че настоящата цифра е по-голямо от предходното пр. IX
-                    resultInDecimal -= previousValue;//Изващдаме предходната цифра от общия сбор
+                {//Ако обаче се окаже че настоящата цифра е по-голяма от предходната пр. IX
+                    resultInDecimal -= previousValue;//Изваждаме предходната цифра от общия сбор
                     resultInDecimal += (valueIndecimal - previousValue);//Изваждаме стойността ѝ от настоящата цифра и тогава прибавяме към общия сбор
                     previousValue = valueIndecimal;
                 }

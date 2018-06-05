@@ -4,7 +4,7 @@ namespace FromBookSum
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             //float sum = 0f;
             //double sum = 0;
@@ -13,7 +13,7 @@ namespace FromBookSum
             {
                 sum += 0.000001m;//f
             }
-            Console.WriteLine("{0:G}",sum);
+            Console.WriteLine("{0:G}", sum);
         }
     }
 }

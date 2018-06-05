@@ -15,7 +15,7 @@ namespace OddNumber
             Array.Sort(numbers);
             for (int i = 0; i < n; i += 2)
             {
-                if (n == 1 || i == n -1 || numbers[i] != numbers[i + 1])
+                if (n == 1 || i == n - 1 || numbers[i] != numbers[i + 1])
                 {//Ако масивът е с един елемент или сме на последния елемент винаги го взимаме
                     Console.WriteLine(numbers[i]);
                     break;

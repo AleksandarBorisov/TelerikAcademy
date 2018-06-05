@@ -13,9 +13,9 @@ namespace ReverseNumber
         static string Reverse(string number)
         {
             string reversed = "";
-            for (int i = number.Length - 1; i >= 0; i--)
+            foreach (var digit in number)
             {
-                reversed += number[i];
+                reversed = digit + reversed;
             }
             return reversed;
         }

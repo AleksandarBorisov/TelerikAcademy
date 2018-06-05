@@ -6,7 +6,7 @@ namespace FirstLargerThanNeighbours
     {
         static void Main()
         {
-            int n = int.Parse(Console.ReadLine());
+            string n = Console.ReadLine();
             string[] numbers = Console.ReadLine().Split(' ');
             Console.WriteLine(ReturnIndex(numbers));
         }

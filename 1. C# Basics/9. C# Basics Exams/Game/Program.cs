@@ -13,7 +13,7 @@ namespace Game
             int max = 0;
             for (int i = 1; i <= 4; i++)
             {
-                int result = 0; ;
+                int result = 0;
                 switch (i)
                 {
                     case 1: result = a + b + c; break;
