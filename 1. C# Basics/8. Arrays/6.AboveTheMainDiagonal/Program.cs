@@ -21,6 +21,18 @@ namespace _6.AboveTheMainDiagonal
                 }
             }
             Console.WriteLine(sum);
+            //Решение от упражненията
+            long totalSum = 0;
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    if (i <= j)
+                    {
+                        totalSum += (long)Math.Pow(2, i + j);
+                    }
+                }
+            }
         }
     }
 }

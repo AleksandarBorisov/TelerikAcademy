@@ -291,7 +291,8 @@ _Typical example of Kadanes algorithm_
             }
         }
 ```
-### Quick Sort simple explanation [link](https://www.youtube.com/watch?v=aQiWF4E8flQ&list=LLTo5TXdsIkS5XgD4lkvae-A&index=1&t=226s)
+### Quick Sort simple explanation [link](https://www.youtube.com/watch?v=aQiWF4E8flQ&list=LLTo5TXdsIkS5XgD4lkvae-A&index=1&t=226s) algorithm [link](https://www.programmingalgorithms.com/algorithm/quick-sort-iterative)
+
 ### Prime numbers (вариант с листи който е адски бавен):
 ```C#
 	using System.Collections.Generic;

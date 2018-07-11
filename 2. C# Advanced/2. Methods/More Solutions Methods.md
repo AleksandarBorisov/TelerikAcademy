@@ -1,4 +1,7 @@
-﻿int n = int.Parse(Console.ReadLine());
+﻿## Още няколко интересни варианта на задачите
+### N Factorial
+```C#
+int n = int.Parse(Console.ReadLine());
 string number = "1";//Първият множител е 1
 string forPrinting = "";
 for (int multiplier = 2; multiplier <= n; multiplier++)
@@ -50,3 +53,4 @@ static string Addition(string previousResult, string currentResult)
     result += countOneUp;//За последната стойност
     return result = result.TrimEnd('0');//Ако е 0, я махаме
 }
+```

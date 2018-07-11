@@ -69,6 +69,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.SecretMessage", "14.Secr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.Flasks", "15.Flasks\15.Flasks.csproj", "{46FE1A2A-8DB1-4371-A360-5F4DC9B181A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16. Mutation", "16. Mutation\16. Mutation.csproj", "{DF53354F-8AAB-46FF-B37D-9BBFF392D404}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17.CodedSMS", "17.CodedSMS\17.CodedSMS.csproj", "{7D35AC43-04C3-4D9F-AAF6-4292B79062F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -207,6 +211,14 @@ Global
 		{46FE1A2A-8DB1-4371-A360-5F4DC9B181A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46FE1A2A-8DB1-4371-A360-5F4DC9B181A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46FE1A2A-8DB1-4371-A360-5F4DC9B181A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF53354F-8AAB-46FF-B37D-9BBFF392D404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF53354F-8AAB-46FF-B37D-9BBFF392D404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF53354F-8AAB-46FF-B37D-9BBFF392D404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF53354F-8AAB-46FF-B37D-9BBFF392D404}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D35AC43-04C3-4D9F-AAF6-4292B79062F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D35AC43-04C3-4D9F-AAF6-4292B79062F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D35AC43-04C3-4D9F-AAF6-4292B79062F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D35AC43-04C3-4D9F-AAF6-4292B79062F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

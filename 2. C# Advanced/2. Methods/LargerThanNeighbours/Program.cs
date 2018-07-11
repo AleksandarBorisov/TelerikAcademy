@@ -14,7 +14,7 @@ namespace LargerThanNeighbours
         static int LargerThanNeighbours(string[] numbers)
         {
             int count = 0;
-            for (int i = 1; i < numbers.Length - 2; i++)
+            for (int i = 1; i < numbers.Length - 1; i++)
             {
                 if ((int.Parse(numbers[i]) > int.Parse(numbers[i - 1])) && (int.Parse(numbers[i]) > int.Parse(numbers[i + 1])))
                 {

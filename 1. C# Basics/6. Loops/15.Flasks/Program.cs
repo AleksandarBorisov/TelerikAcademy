@@ -3,7 +3,7 @@
 namespace _15.Flasks
 {
     class Program
-    {
+    {//Задача от judge.telerikacademy
         static void Main()
         {
             string[] line = Console.ReadLine().Split(' ');

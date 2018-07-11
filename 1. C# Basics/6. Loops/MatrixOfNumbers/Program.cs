@@ -22,6 +22,13 @@ namespace MatrixOfNumbers
                     Console.Write(i + " ");
                 }
             }
+
+            //Решение с един цикъл и математическа функция, което е по бавно от горното
+            //for (int i = 1; i <= n * n; i++)
+            //{
+            //    Console.Write(i - ((i - 1) / n * (n - 1)));
+            //    Console.Write(i % n != 0 ? " " : Environment.NewLine);
+            //}
         }
     }
 }

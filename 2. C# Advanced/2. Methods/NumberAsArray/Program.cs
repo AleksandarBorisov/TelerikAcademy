@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace NumberAsArray
 {
@@ -14,7 +15,7 @@ namespace NumberAsArray
 
         static string Sum(string firstString, string secondString)
         {
-            string sum = "";
+            StringBuilder sum = new StringBuilder();
             int countOneUp = 0;//Тук се пазят десетиците
             int units = 0;//Тук се пазят единиците
             int index = 0;
@@ -32,11 +33,15 @@ namespace NumberAsArray
                 {
                     units = (firstString[index] - '0') + (secondString[index] - '0') + countOneUp;
                 }
-                sum += units % 10 + " ";
+                sum.Append(units % 10).Append(" ");
                 countOneUp = units / 10;
                 index++;
             }
-            return sum = sum.Trim();
+            if (countOneUp > 0)
+            {
+                return sum.Append(countOneUp).ToString();
+            }
+            return sum.Remove(sum.Length - 1, 1).ToString();
         }
     }
 }
