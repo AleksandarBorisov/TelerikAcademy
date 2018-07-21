@@ -38,23 +38,24 @@ namespace FrequentNumber
             //}
             //Console.WriteLine("{0} ({1} times)", mvp, maxCount);
 
-            //Втори вариант
-            //short n = short.Parse(Console.ReadLine());
-            //short[] numbers = new short[10001];
-            //for (int i = 0; i < n; i++)
-            //{
-            //    numbers[short.Parse(Console.ReadLine())]++;
-            //}
-            //short maxCount = numbers[0];
-            //foreach (short number in numbers)
-            //{
-            //    if (number > maxCount)
-            //    {
-            //        maxCount = number;
-            //    }
-            //}
-            //Console.WriteLine("{0} ({1} times)", Array.IndexOf(numbers, maxCount), maxCount);
+            //Втори вариант(Най-бърз)
+            short n = short.Parse(Console.ReadLine());
+            short[] numbers = new short[10001];
+            for (int i = 0; i < n; i++)
+            {
+                numbers[short.Parse(Console.ReadLine())]++;
+            }
+            short maxCount = numbers[0];
+            foreach (short number in numbers)
+            {
+                if (number > maxCount)
+                {
+                    maxCount = number;
+                }
+            }
+            Console.WriteLine("{0} ({1} times)", Array.IndexOf(numbers, maxCount), maxCount);
 
+            //Трети вариант
             //short n = short.Parse(Console.ReadLine());
             //short[] numbers = new short[10001];
             //short maxCount = 0;
@@ -63,27 +64,31 @@ namespace FrequentNumber
             //    short number = ++numbers[short.Parse(Console.ReadLine())];
             //    maxCount = number > maxCount ? number : maxCount;
             //}
-            //Console.WriteLine("{0} ({1} times)", Array.IndexOf(numbers, maxCount), maxCount);
+            //Console.WriteLine($"{Array.IndexOf(numbers, maxCount)} ({maxCount} times)");
 
-
-            Dictionary<int, int> occurences = new Dictionary<int, int>();
-
-            var number = 5;
-            if (occurences.ContainsKey(number))
-            {
-                occurences[number]++;
-            }
-            else
-            {
-                occurences[number] = 1;
-                occurences.Add(number, 1);
-            }
-            
-
-            foreach (KeyValuePair<string, int> item in peopleWithAges)
-            {
-                Console.WriteLine(item.Key + " " +item.Value );
-            }
+            //Трети вариант с речници
+            //int n = int.Parse(Console.ReadLine());
+            //Dictionary<int, int> mostFrequent = new Dictionary<int, int>(n);
+            //int maxCount = 0;
+            //int index = 0;
+            //for (int i = 0; i < n; i++)
+            //{
+            //    int number = int.Parse(Console.ReadLine());
+            //    if (mostFrequent.ContainsKey(number))
+            //    {
+            //        mostFrequent[number]++;
+            //        if (mostFrequent[number] > maxCount)
+            //        {
+            //            maxCount = mostFrequent[number];
+            //            index = number;
+            //        }
+            //    }
+            //    else
+            //    {
+            //        mostFrequent.Add(number, 1);
+            //    }
+            //}
+            //Console.WriteLine("{0} ({1} times)", index, maxCount);
         }
     }
 }

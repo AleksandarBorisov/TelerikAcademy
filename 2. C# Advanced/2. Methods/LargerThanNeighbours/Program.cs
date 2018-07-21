@@ -8,7 +8,7 @@ namespace LargerThanNeighbours
         {
             int n = int.Parse(Console.ReadLine());
             string[] numbers = Console.ReadLine().Split(' ');
-            Console.WriteLine(LargerThanNeighbours(numbers));
+            Console.WriteLine($"{LargerThanNeighbours(numbers)}");
         }
 
         static int LargerThanNeighbours(string[] numbers)

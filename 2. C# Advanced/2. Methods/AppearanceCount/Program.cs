@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace AppearanceCount
 {
     class Program
@@ -8,7 +9,7 @@ namespace AppearanceCount
             int n = int.Parse(Console.ReadLine());
             string[] numbers = Console.ReadLine().Split(' ');
             string search = Console.ReadLine();
-            Console.WriteLine(SearchMatrix(numbers, search));
+            Console.WriteLine($"{SearchMatrix(numbers, search)}");
         }
 
         static int SearchMatrix(string[] numbers, string searchedNumber)

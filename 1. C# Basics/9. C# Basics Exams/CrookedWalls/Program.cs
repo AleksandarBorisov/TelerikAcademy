@@ -11,7 +11,7 @@ namespace CrookedWalls
             int position = 1;
             while (position < walls.Length)
             {
-                int distance = Math.Abs(int.Parse(walls[position]) - int.Parse(walls[position - 1]));
+                long distance = Math.Abs(long.Parse(walls[position]) - long.Parse(walls[position - 1]));
                 if (distance % 2 == 0)
                 {
                     position += 2;

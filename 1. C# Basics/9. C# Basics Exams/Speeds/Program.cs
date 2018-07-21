@@ -32,7 +32,7 @@ namespace Speeds
                     maxSumSpeed = sumSpeed;
                 }
             }
-            Console.WriteLine(maxSumSpeed);
+            Console.WriteLine($"{maxSumSpeed}");//Наблягам на начина на печатане
         }
     }
 }

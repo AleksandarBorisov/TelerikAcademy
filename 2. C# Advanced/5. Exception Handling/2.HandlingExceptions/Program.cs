@@ -1,0 +1,25 @@
+﻿using System;
+
+namespace _2.HandlingExceptions
+{
+    class Program
+    {
+        static void Main()
+        {
+            string s = Console.ReadLine();
+            try
+            {
+                int.Parse(s);
+                Console.WriteLine("You entered valid Int32 number {0}.", s);
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Invalid integer number!");
+            }
+            catch(OverflowException)
+            {
+                Console.WriteLine("The number is too big to fit in Int32!");
+            }
+        }
+    }
+}

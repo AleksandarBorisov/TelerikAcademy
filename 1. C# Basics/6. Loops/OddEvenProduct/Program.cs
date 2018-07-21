@@ -23,7 +23,7 @@ namespace OddEvenProduct
                     even *= number;
                 }
             }
-            Console.WriteLine(even == odd ? "yes " + even : "no " + odd + " " + even);
+            Console.WriteLine($"{(even == odd ? "yes " + even : "no " + odd + " " + even)}");
         }
     }
 }

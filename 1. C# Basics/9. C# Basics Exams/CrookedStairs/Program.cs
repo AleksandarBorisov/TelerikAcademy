@@ -6,17 +6,17 @@ namespace CrookedStairs
     {
         static void Main()
         {
-            int firstBrick = int.Parse(Console.ReadLine());
-            int secondBrick = int.Parse(Console.ReadLine());
-            int thirdBrick = int.Parse(Console.ReadLine());
-            int layersCount = int.Parse(Console.ReadLine());
+            long firstBrick = long.Parse(Console.ReadLine());
+            long secondBrick = long.Parse(Console.ReadLine());
+            long thirdBrick = long.Parse(Console.ReadLine());
+            long layersCount = long.Parse(Console.ReadLine());
             Console.WriteLine(firstBrick);
             Console.WriteLine(secondBrick + " " + thirdBrick);
             for (int i = 3; i <= layersCount; i++)
             {
                 for (int j = 1; j <= i; j++)
                 {
-                    int fourthBrick = firstBrick + secondBrick + thirdBrick;
+                    long fourthBrick = firstBrick + secondBrick + thirdBrick;
                     firstBrick = secondBrick;
                     secondBrick = thirdBrick;
                     thirdBrick = fourthBrick;

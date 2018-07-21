@@ -43,6 +43,14 @@ namespace _1.Challenge
             //    text = text.Replace(substring, newSubstring.ToUpper());
             //}
             //Console.WriteLine(text);
+
+            //Още едно решение
+            //string[] splitByUpper = message.Split(new[] { "<<" ,">>"}, StringSplitOptions.None);
+            //for (int i = 1; i < splitByUpper.Length; i += 2)
+            //{//Обхождаме само нечетните елементи, защото тях трябва да направим главни
+            //    splitByUpper[i] = splitByUpper[i].ToUpper();
+            //}
+            //Console.WriteLine(string.Concat(splitByUpper));
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace BinaryDigitsCount
 {
@@ -8,7 +9,7 @@ namespace BinaryDigitsCount
         {
             byte bit = byte.Parse(Console.ReadLine());
             short n = short.Parse(Console.ReadLine());
-            string answer = "";
+            StringBuilder answer = new StringBuilder();
             for (int i = 0; i < n; i++)
             {
                 uint number = uint.Parse(Console.ReadLine());
@@ -21,14 +22,14 @@ namespace BinaryDigitsCount
                 }
                 if (bit == 1)
                 {
-                    answer += countOnes.ToString() + '\n';
+                    answer.Append(countOnes).Append('\n');
                 }
                 else
                 {
-                    answer += (numberLength - countOnes).ToString() + '\n';
+                    answer.Append((numberLength - countOnes)).Append('\n');
                 }
             }
-            Console.Write(answer);
+            Console.Write($"{answer.ToString()}");
         }
     }
 }

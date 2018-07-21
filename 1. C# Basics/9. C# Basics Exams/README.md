@@ -17,6 +17,10 @@ _Checked task means that it is run in the judge-system_
 - [x] Tribonacci
 ### Telerik Academy Exam 1 @ 27 Dec 2012
 - [x] Tribonacci Triangle
+### C# Part 2 - 2012/2013 @ 4 Feb 2013 - Morning
+- [x] Kaspichan Numbers
+### C# Part 2 - 2012/2013 @ 5 Feb 2013
+- [x] Joro The Rabbit
 ### Exam from 23 June 2013:
 - [ ] Coffee Vending Machine
 - [ ] Drunken Numbers
@@ -92,6 +96,8 @@ _Checked task means that it is run in the judge-system_
 - [x] Jump, Jump
 - [x] Hidden Message
 - [x] Mixing Numbers
+### C# Advanced - 2016/2017 @ 1 June 2016 - Evening
+- [x] Kitty
 ### Telerik Academy Alpha - JS Mock Exam 9 Sep 2017
 - [x] Counting
 - [x] Pyramids

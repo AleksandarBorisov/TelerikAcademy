@@ -73,6 +73,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.ZigZag", "10.ZigZag\10.Z
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.ArraySearch", "11.ArraySearch\11.ArraySearch.csproj", "{D38CE62D-DB60-4017-B6AB-24A807DC623A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.Ring", "12.Ring\12.Ring.csproj", "{1580E182-591B-4195-BA51-D439ED7B6957}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -219,6 +221,10 @@ Global
 		{D38CE62D-DB60-4017-B6AB-24A807DC623A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D38CE62D-DB60-4017-B6AB-24A807DC623A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D38CE62D-DB60-4017-B6AB-24A807DC623A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1580E182-591B-4195-BA51-D439ED7B6957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1580E182-591B-4195-BA51-D439ED7B6957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1580E182-591B-4195-BA51-D439ED7B6957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1580E182-591B-4195-BA51-D439ED7B6957}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
