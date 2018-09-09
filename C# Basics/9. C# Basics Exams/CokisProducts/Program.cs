@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
 
 namespace CokisProducts
@@ -9,14 +10,17 @@ namespace CokisProducts
         {
             //Достига се лимита от време, иначе логиката е вярна
             int n = int.Parse(Console.ReadLine());
-            string[] products = new string[n];
-            double[] prizeList = new double[n];
+            //string[] products = new string[n];
+            //double[] prizeList = new double[n];
+            StringBuilder result = new StringBuilder();
+            Dictionary<string, double> productsPrices = new Dictionary<string, double>();
             for (int i = 0; i < n; i++)
             {
                 string line = Console.ReadLine();
                 int prizeProductDivider = line.LastIndexOf(' ');//Четем отдясно наляво и намираме първия space
-                prizeList[i] = double.Parse(line.Substring(prizeProductDivider + 1));//След него е индекса на цената на продукта
-                products[i] = line.Substring(0, prizeProductDivider).Trim(' ');//А преди него се намира самия продукт
+                productsPrices.Add(line.Substring(0, prizeProductDivider).Trim(' '), double.Parse(line.Substring(prizeProductDivider + 1)));
+                //prizeList[i] = double.Parse(line.Substring(prizeProductDivider + 1));//След него е индекса на цената на продукта
+                //products[i] = line.Substring(0, prizeProductDivider).Trim(' ');//А преди него се намира самия продукт
             }
             int m = int.Parse(Console.ReadLine());//Броя листове с продукти
             double[] lists = new double[m];//Тук ще пазим сумите на всеки лист с продукти
@@ -34,14 +38,16 @@ namespace CokisProducts
                         count = int.Parse(product.ToString(0, indexOfSpace));
                         product.Remove(0, indexOfSpace + 1);
                     }
-                    lists[i] += count * prizeList[Array.IndexOf(products, product.ToString().Trim(' '))];//Добавяме на съответния индекс в масива lists
+                    lists[i] += count * productsPrices[product.ToString().Trim(' ')];//prizeList[Array.IndexOf(products, product.ToString().Trim(' '))];//Добавяме на съответния индекс в масива lists
                     //Получения артикул търсим в масива products, и използваме намерения индекс, за да вземем цената от масива prizeList
                 }
+                result.Append($"{lists[i]:F2}" + Environment.NewLine);
             }
-            foreach (var list in lists)
-            {
-                Console.WriteLine("{0:F2}", list);
-            }
+            Console.WriteLine(result.ToString());
+            //foreach (var list in lists)
+            //{
+            //    Console.WriteLine("{0:F2}", list);
+            //}
         }
     }
 }

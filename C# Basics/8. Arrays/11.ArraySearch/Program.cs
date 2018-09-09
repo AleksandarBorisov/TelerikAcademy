@@ -6,6 +6,7 @@ namespace _11.ArraySearch
     {//Задача от judge.telerikacademy
         static void Main()
         {
+            // Първи начин
             char[] array = Console.ReadLine().Replace(",", "").ToCharArray();
             bool[] found = new bool[array.Length];
             string result = "";
@@ -24,6 +25,28 @@ namespace _11.ArraySearch
                 }
             }
             Console.WriteLine(result.Trim(','));
+
+            // Втори начин
+            //int[] numbers = Console.ReadLine().Split(',').Select(int.Parse).ToArray();
+            //bool[] abscentNumbers = new bool[numbers.Length + 1];
+            //StringBuilder result = new StringBuilder();
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    abscentNumbers[numbers[i]] = true;
+            //}
+            //for (int i = 1; i < abscentNumbers.Length; i++)
+            //{
+            //    if (!abscentNumbers[i])
+            //    {
+            //        result.Append(i);
+            //        result.Append(",");
+            //    }
+            //}
+            //if (result.Capacity > 1)
+            //{
+            //    result.Remove(result.Length - 1, 1);
+            //}
+            //Console.WriteLine(result.ToString());
         }
     }
 }

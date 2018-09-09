@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace _12.Ring
 {
@@ -36,7 +38,7 @@ namespace _12.Ring
                 counter = students[removeStudentIndex, 1];//Брояча преброява следващия елемент след "извадения"
                 //PrintStudents(students);
             }
-            Console.WriteLine("{0}", counter);
+            Console.WriteLine(counter);
 
             //private static void PrintStudents(int[,] forPrinting)
             //{
@@ -51,6 +53,29 @@ namespace _12.Ring
             //    }
             //    Console.WriteLine();
             //}
+
+            //Лимит време след 6 кейс
+            //string[] line = Console.ReadLine().Split();
+            //int n = int.Parse(line[0]);
+            //int k = int.Parse(line[1]);
+            //List<int[]> students = new List<int[]>();
+            //for (int i = 0; i < n; i++)
+            //{
+            //    int[] student = new int[] { int.Parse(Console.ReadLine()), i + 1 };
+            //    students.Add(student);
+            //}
+            //for (int i = 1; i <= n - 1; i++)
+            //{//Трябва да махнем точно n - 1 ученика, за да остане последния
+            //    k--;//защото броим от 0
+            //    if (k < 0 )
+            //    {
+            //        k += students.Count;
+            //    }
+            //    int removeStudentK = students[k][0];
+            //    students.RemoveAt((k)% students.Count);
+            //    k = (k + removeStudentK) % students.Count;
+            //}
+            //Console.WriteLine("{0}", students.FirstOrDefault()[1]);
         }
     }
 }
