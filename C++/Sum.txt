@@ -1,0 +1,50 @@
+#include <iostream>
+
+using namespace std;
+int main ()
+{
+    int a,b,c,min,max;
+    cin>>a>>b>>c;
+	if(a < b)
+	{
+		if(a < c)
+		{
+			min = a;
+			if(b < c)
+			{
+				max = c;
+			}
+			else
+			{
+				max = b;
+			}
+		}
+		else
+		{
+			min = c;
+			max = b;
+		}
+	}
+	else
+	{
+		if(b < c)
+		{
+			min = b;
+			if(a < c)
+			{
+				max = c;
+			}
+			else
+			{
+				max = a;
+			}
+		}
+		else
+		{
+			min = c;
+			max = a;
+		}
+	}
+	cout<<min + max<<endl;
+    return 0;
+}

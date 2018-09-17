@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cstdio>
+
+using namespace std;
+int main ()
+{
+    string letters;
+	short n,k,counter = 1, maxCount = 0, min = 0;
+    cin>>n>>k>>letters;
+	for(int i = 1 ; i < n ; i++)
+    {//Сравняваме всеки елемент с тези наляво от него като всеки път когато намерим неотговарящ на условието 
+	//местим долната граница(min) надясно от този елемент, това ни гарантира че всички елементи надясно от min включително
+	//ще отговарят на условието
+		counter = 1;
+		for(int j = i - 1; j >= min; j--)
+		{
+			if(abs(letters[i] - letters[j]) < k)
+			{
+				counter++;
+			}
+			else
+			{
+				min = ++j;
+				break;
+			}
+		}
+		if(counter > maxCount) maxCount = counter;
+    }
+	cout<<maxCount<<endl;
+    return 0;
+}

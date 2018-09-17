@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+int main ()
+{
+    int n, l, index = 0, currentLength = 0, maxLength = 0;
+    cin>>n>>l;
+	int a[n], b[n];
+	for(int i = 0 ; i < n ; i++)
+    {
+        cin>>a[i];
+    }
+	for(int i = 0 ; i < n ; i++)
+    {
+        cin>>b[i];
+    }
+	for(int i = 0; i < n - 1 ; i++)
+	{
+		index = i + 1;
+		currentLength = b[i];
+		while((index < n) && (a[index] - a[i] <= l))
+		{
+			currentLength = currentLength + b[index];
+			index++;
+		}
+		if(currentLength > maxLength) maxLength = currentLength;
+	}
+	cout<<maxLength<<endl;
+    return 0;
+}

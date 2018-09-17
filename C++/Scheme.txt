@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+int main ()
+{
+    int n,m,min,max;
+	char sign;
+    cin>>n>>m>>sign;
+	if(n < m)
+	{
+		min = n;
+		max = m;
+	}
+	else
+	{
+		min = m;
+		max = n;
+	}
+	for(int i=1;i<=min;i++)
+    {
+        for(int j=1;j<=max;j++)
+		{
+			cout<<sign;
+		}
+		cout<<endl;
+    }
+    return 0;
+}
