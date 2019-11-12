@@ -1,0 +1,59 @@
+Simple Service started 12.11.2019 08:07:38 
+Simple Service Mode: INTERVAL 12.11.2019 08:07:38 
+Simple Service scheduled to run after: 0 day(s) 0 hour(s) 1 minute(s) 0 seconds(s) 12.11.2019 08:07:38 
+Simple Service Log: 12.11.2019 08:08:38 
+Simple Service Mode: INTERVAL 12.11.2019 08:08:38 
+Simple Service scheduled to run after: 0 day(s) 0 hour(s) 1 minute(s) 0 seconds(s) 12.11.2019 08:08:38 
+Simple Service Log: 12.11.2019 08:09:38 
+Simple Service Mode: INTERVAL 12.11.2019 08:09:38 
+Simple Service scheduled to run after: 0 day(s) 0 hour(s) 1 minute(s) 0 seconds(s) 12.11.2019 08:09:38 
+Simple Service Log: 12.11.2019 08:10:38 
+Simple Service Mode: INTERVAL 12.11.2019 08:10:38 
+Simple Service scheduled to run after: 0 day(s) 0 hour(s) 1 minute(s) 0 seconds(s) 12.11.2019 08:10:38 
+Simple Service stopped 12.11.2019 08:11:04 
+Simple Service started 12.11.2019 08:16:55 
+Simple Service Mode: INTERVAL 12.11.2019 08:16:55 
+Simple Service scheduled to run after: 0 day(s) 0 hour(s) 1 minute(s) 0 seconds(s) 12.11.2019 08:16:55 
+Simple Service Log: 12.11.2019 08:17:55 
+Simple Service Mode: INTERVAL 12.11.2019 08:17:55 
+Simple Service scheduled to run after: 0 day(s) 0 hour(s) 1 minute(s) 0 seconds(s) 12.11.2019 08:17:55 
+Simple Service Log: 12.11.2019 08:18:55 
+Simple Service Mode: INTERVAL 12.11.2019 08:18:55 
+Simple Service scheduled to run after: 0 day(s) 0 hour(s) 1 minute(s) 0 seconds(s) 12.11.2019 08:18:55 
+Simple Service Log: 12.11.2019 08:19:55 
+Simple Service Mode: INTERVAL 12.11.2019 08:19:55 
+Simple Service scheduled to run after: 0 day(s) 0 hour(s) 1 minute(s) 0 seconds(s) 12.11.2019 08:19:55 
+Simple Service Log: 12.11.2019 08:20:55 
+Simple Service Mode: INTERVAL 12.11.2019 08:20:55 
+Simple Service scheduled to run after: 0 day(s) 0 hour(s) 1 minute(s) 0 seconds(s) 12.11.2019 08:20:55 
+Simple Service Log: 12.11.2019 08:21:55 
+Simple Service Mode: INTERVAL 12.11.2019 08:21:55 
+Simple Service scheduled to run after: 0 day(s) 0 hour(s) 1 minute(s) 0 seconds(s) 12.11.2019 08:21:55 
+Simple Service Log: 12.11.2019 08:22:55 
+Simple Service Mode: INTERVAL 12.11.2019 08:22:55 
+Simple Service scheduled to run after: 0 day(s) 0 hour(s) 1 minute(s) 0 seconds(s) 12.11.2019 08:22:55 
+Simple Service Log: 12.11.2019 08:23:55 
+Simple Service Mode: INTERVAL 12.11.2019 08:23:55 
+Simple Service scheduled to run after: 0 day(s) 0 hour(s) 1 minute(s) 0 seconds(s) 12.11.2019 08:23:55 
+Simple Service Log: 12.11.2019 08:24:55 
+Simple Service Mode: INTERVAL 12.11.2019 08:24:55 
+Simple Service scheduled to run after: 0 day(s) 0 hour(s) 1 minute(s) 0 seconds(s) 12.11.2019 08:24:55 
+Simple Service Log: 12.11.2019 08:25:55 
+Simple Service Mode: INTERVAL 12.11.2019 08:25:55 
+Simple Service scheduled to run after: 0 day(s) 0 hour(s) 1 minute(s) 0 seconds(s) 12.11.2019 08:25:55 
+Simple Service Log: 12.11.2019 08:26:55 
+Simple Service Mode: INTERVAL 12.11.2019 08:26:55 
+Simple Service scheduled to run after: 0 day(s) 0 hour(s) 1 minute(s) 0 seconds(s) 12.11.2019 08:26:55 
+Simple Service Log: 12.11.2019 08:27:55 
+Simple Service Mode: INTERVAL 12.11.2019 08:27:55 
+Simple Service scheduled to run after: 0 day(s) 0 hour(s) 1 minute(s) 0 seconds(s) 12.11.2019 08:27:55 
+Simple Service Log: 12.11.2019 08:58:46 
+Simple Service Mode: INTERVAL 12.11.2019 08:58:46 
+Simple Service scheduled to run after: 0 day(s) 0 hour(s) 1 minute(s) 0 seconds(s) 12.11.2019 08:58:46 
+Simple Service Log: 12.11.2019 08:59:46 
+Simple Service Mode: INTERVAL 12.11.2019 08:59:46 
+Simple Service scheduled to run after: 0 day(s) 0 hour(s) 1 minute(s) 0 seconds(s) 12.11.2019 08:59:46 
+Simple Service Log: 12.11.2019 09:00:46 
+Simple Service Mode: INTERVAL 12.11.2019 09:00:46 
+Simple Service scheduled to run after: 0 day(s) 0 hour(s) 1 minute(s) 0 seconds(s) 12.11.2019 09:00:46 
+Simple Service stopped 12.11.2019 09:01:44 
